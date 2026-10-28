@@ -1,0 +1,58 @@
+\section{Three Mathematical Forms}
+
+\subsection{An Exponential Cost Model}
+
+First choose an outcome. Let $C>0$ denote cost, labor, or mean time per acceptable result for a fixed task and boundary. Choose a matching reference $C_{\mathrm{ref}}>0$, and define a dimensionless response $\eta=C/C_{\mathrm{ref}}$.
+
+If the marginal effects of normalized constraints on log cost are approximately constant, an initial model is
+\begin{equation}
+ \eta=\eta_0\exp(\alpha R+\beta T+\gamma G).
+\end{equation}
+$R,T,G$ are dimensionless measurements whose definitions and baselines must be published. The coefficients describe log-cost changes per unit of those measurements. Positive signs are hypotheses for the chosen definitions.
+
+The additive exponent gives multiplicative relative-cost factors. It does not follow merely because stages are connected in series. Serial durations can add, parallel completion can depend on a maximum, and steady pipeline capacity can depend on a bottleneck.
+
+With constant coefficients, fixed $G$ and baseline, and $\alpha\neq0$, an equal-cost slope is
+\begin{equation}
+ \left(\frac{\partial R}{\partial T}\right)_\eta
+ =-\frac{\beta}{\alpha}.
+\end{equation}
+This is a slope in the assumed response surface. It does not show that the project has an available intervention following that direction.
+
+Interactions can be tested by adding terms such as $\delta RT$. Threshold, saturating, additive-cost, and nonparametric alternatives should be compared. An exponential has a smoothly increasing marginal cost; it does not by itself create a phase transition or critical threshold.
+
+Variables must be constructed independently enough to avoid circularity. Relabeling observed completion time as “temporal rigidity” and then using it to predict completion time supplies little explanation.
+
+Estimate on one sample, check later periods and comparable projects, and inspect residuals by task and medium. Structured residuals may reveal missing variables or a wrong form. Unstructured residuals in a small sample do not establish a mechanism.
+
+Coefficient drift can reflect changing technology, omitted conditions, or unstable definitions. It does not by itself prove reversed causality. Record which interpretation the available evidence can distinguish.
+
+\subsection{A Timescale Ratio}
+
+The Deborah number compares relaxation and observation or driving timescales \cite{reiner1964deborah}:
+\begin{equation}
+ \mathrm{De}=\frac{\tau_{\mathrm{relax}}}
+                  {\tau_{\mathrm{obs}}}.
+\end{equation}
+Specify the mechanism. A system can have many relaxation times: equipment replacement, workforce training, inventory adjustment, and rule revision need not share a value.
+
+In a material model, a small ratio means substantial relaxation within the chosen timescale; a large ratio means the material retains more of its unrelaxed response. Social applications require evidence for an analogous adjustment mechanism.
+
+Changing the observation window changes the description, not the system's actual recovery capacity. Governance changes a mismatch by changing the input, response capability, coupling, or buffer.
+
+If a single-time Maxwell material is an appropriate physical model, its loss modulus peaks near $\omega\tau=1$. A social adjustment process does not acquire the same peak simply because a timescale ratio has been assigned to it.
+
+\subsection{A Rate-Dependent Resistance}
+
+Over a defined thickening range, a simple rheological form is
+\begin{equation}
+ \eta(\dot\gamma)=\eta_b+k\dot\gamma^n,
+ \qquad k>0,\quad n>0.
+\end{equation}
+For dynamic viscosity in $\mathrm{Pa\,s}$ and shear rate in $\mathrm{s^{-1}}$, $k$ has units $\mathrm{Pa\,s^{n+1}}$. The expression supplies a rising branch, not a universal complete flow curve.
+
+Biological and institutional applications must define intervention rate and effective resistance in their own units. Dose, frequency, cumulative exposure, and pace are different variables. Compensation, damage, adaptation, and recovery can generate several response shapes.
+
+To test a power law, measure a sufficiently wide input range, repeat the measurements, and compare threshold and saturation models. With a non-negligible baseline $\eta_b$, the slope of $\ln\eta$ against $\ln\dot\gamma$ is not identically $n$. Either fit the full expression or justify a range in which the baseline can be neglected.
+
+The physical model and its cross-domain application occupy different evidential positions. A familiar curve suggests a candidate mechanism; measurements in the target system decide whether it belongs there.

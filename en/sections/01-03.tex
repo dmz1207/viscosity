@@ -1,0 +1,215 @@
+\section{The Crisis of Instrumental Value}
+
+\subsection{Replacement Runs on Different Clocks}
+
+Tasks are exposed to automation at different points in the chain. Generating routine text, summaries, code, and analysis often takes place in a low-friction environment. Repair, assembly, inspection, care, and transport require action within a setting that can be irregular, occupied, and consequential. A new model capability meets different deployment costs in each.
+
+This creates a social split: \key{the body can remain in the old workplace while the evidence of professional worth has already changed.}
+
+\subhead{The economics of the last meter}
+
+A robot is a capital asset. Purchase, integration, depreciation, maintenance, power, supervision, and downtime enter its cost. Human labor has wages, benefits, training, safety, support, and the wider costs of developing and sustaining a person. An employer's account captures only part of the latter. A low purchase price for labor can reflect a successful transfer of costs to workers, households, or public institutions.
+
+An introductory annual-cost comparison is
+
+\begin{equation}
+C_{\mathrm{human}}=w,
+\qquad
+C_{\mathrm{machine}}=\frac{K}{L}+m.
+\end{equation}
+
+Here $w$ is the annual cost assigned to the human option, $K$ the machine's purchase and installation cost, $L$ its accounting life in years, and $m$ annual operating and maintenance expense. For matched output, quality, availability, and risk, a lower $K/L+m$ can favor substitution in this simplified account. Financing, utilization, transition costs, and the distribution of liability can change the result. An attractive purchase calculation still needs an executable deployment.
+
+The last meter often carries the irregular work. Consider a parcel route. Route planning is one task; finding the correct entrance, handling a damaged package, dealing with an inaccessible building, and resolving a disputed delivery are others. A warehouse robot meets a related problem when a container deforms or an object lies outside the expected pose. Each additional condition has to be engineered into a system that remains economical and reliable.
+
+The field is advancing, so a frozen picture of robot failure would be misleading. On October~27, 2026, Waymo announced an expansion of nearly 250 square miles across five United States markets. A week earlier it announced preparations for Madrid; its Toronto announcement set a goal of first riders in 2028.\cite{waymo2026expansion,waymo2026madrid,waymo2026toronto} Existing service, a local expansion, and a future launch target occupy different stages of the same deployment chain. Reading them all as a single capability number erases most of the engineering.
+
+\input{figures/deployment-stages.tex}
+
+Substitution also has a calendar. Procurement, installation, qualification, retraining, and a new operating arrangement consume time after a machine demonstrates a task. The ratio between that interval and the time needed to generate a plan depends on the task. Cheap generation does not install a fleet.
+
+These cost advantages move. Better machines, higher utilization, lower energy prices, and standardized environments can reverse a comparison. The buffer is an opportunity to organize a transition.
+
+\subhead{Useful, but no longer the author}
+
+Employment can persist while its meaning changes. A person's job may survive because the receiving system is hard to automate, even as the outputs used to recognize their expertise become easy to obtain elsewhere.
+
+Employment statistics and professional experience then register different things. One counts whether a position exists. The other asks whether the position still conveys competence, discretion, and recognition. A worker can remain on the payroll while losing authority over the process.
+
+Modern institutions often reward people through a functional equation: ability, output, and social standing are treated as if they rose together. Generative systems disturb the relation. A finished illustration or a plausible program no longer provides the same evidence of training and experience. Expert judgment can remain valuable while the familiar artifact becomes a weaker signal of it.
+
+The resulting fear can exceed a fear of lost income. “Someone can still pay me to do something” does not settle “what part of this work is mine?” Where outputs once established a place, their abundance creates a demand for other forms of proof.
+
+Algorithmic management makes this problem visible. In parcel logistics, warehouse picking, and ride-hailing, software can assign tasks, shape routes, record performance, and influence pay, while people handle the physical contact and its exceptions. The degree of autonomy depends on the power to refuse, revise, contest, or pause a task. A worker can be indispensable to execution and have little say over its terms.
+
+Yuval Harari's phrase “useless class” points toward the anxiety, but usefulness can remain high. People may still perform necessary work while disappearing from the account of who directs and creates. The question is their recognized agency within the system.
+
+The danger is a split between bodily usefulness and public authorship. A society may continue to depend on people for difficult material work while describing intelligence and initiative as properties of the coordinating platform. Addressing that split requires more than keeping jobs numerically intact.
+
+\subsection{Efficiency Creates New Bottlenecks}
+
+An efficiency gain creates room for a response. That response can consume the room.
+
+Cheap generation supplies more proposals, drafts, and code. If their arrival rate grows faster than review and maintenance capacity, work accumulates there. The person spared a first draft may inherit a queue of drafts to judge. This is a throughput mismatch; a saving can also remain a saving when the receiving system has enough capacity.
+
+\input{figures/bottleneck-migration.tex}
+
+Several familiar mechanisms expose the same pattern. Table~\ref{tab:ch1-paradox} places them side by side.
+
+\begin{table}[ht]
+\centering
+\caption{Local improvements and the responses they can induce}
+\label{tab:ch1-paradox}
+{\small
+\begin{tabularx}{\textwidth}{@{}p{2.25cm}XXX@{}}
+\toprule
+Mechanism & Local change & Response & Possible result\\
+\midrule
+Jevons & Cheaper use & More uses and users & Higher total consumption\\
+Braess & An added route & Drivers reroute & A worse traffic equilibrium\\
+Goodhart / Campbell & A rewarded metric & Behavior targets the measure & The measure loses fidelity\\
+Lucas / reflexivity & A model informs action & Participants adapt & Historical relations change\\
+Risk compensation & Lower risk per exposure & More or stronger exposure & Some benefits are offset\\
+Automation irony & Routine tasks disappear & People move away from practice & Harder exceptional takeovers\\
+\bottomrule
+\end{tabularx}}
+\end{table}
+
+The common sequence is a changed local condition, a response within the system, and a new distribution of costs. The mechanisms remain distinct. Putting them in one account helps identify what a local performance measure misses.
+
+\subhead{Use and equilibrium}
+
+Jevons observed that more efficient use of coal could expand the activities that consumed it.\cite{jevons1865coal,allwood2012sustainable} Lower cost opens applications that were previously uneconomical. The outcome depends on how much use expands.
+
+Let $q$ be the physical resource required per operation, $p$ the monetary price per operation, and $N(p)$ the number of operations per unit time. Under the illustrative assumption $p=\alpha q$ with fixed $\alpha$,
+
+\begin{equation}
+E=qN(p),
+\qquad
+\varepsilon=-\frac{d\ln N}{d\ln p},
+\qquad
+\frac{d\ln E}{d\ln q}=1-\varepsilon.
+\end{equation}
+
+$E$ is resource use per unit time and $\varepsilon$ the demand elasticity. For $\varepsilon<1$, lower resource use per operation reduces the total. For $\varepsilon>1$, expanded demand more than offsets the saving. The price relation connects engineering efficiency to demand in this example.
+
+The current AI industry supplies a live version of the question. In April~2026, the IEA reported a steep fall in energy use per AI task alongside a 17\% increase in total data-center electricity demand during 2025. New use cases and adoption were expanding as individual tasks became more efficient.\cite{iea2026questions} Per-task efficiency and aggregate demand can move in opposite directions.
+
+Generated code, content, and plans can exhibit a related throughput effect. Easier production invites more production. Review, testing, dependency management, and the disposal of bad candidates then become larger parts of the work. Whether the total burden rises is an outcome to measure.
+
+Braess's paradox moves the issue from volume to routing. In some networks, adding an edge makes the equilibrium travel time worse because travelers adjust their routes in response.\cite{braess1968}
+
+For one origin-destination pair and fixed demand, a Wardrop equilibrium requires every used route to have minimum cost:
+
+\begin{equation}
+f_i>0\ \Longrightarrow\
+c_i(\mathbf f)=\min_{j\in\mathcal P}c_j(\mathbf f).
+\end{equation}
+
+By contrast, a system optimum minimizes total travel time over feasible flows:
+
+\begin{equation}
+\min_{\mathbf f\in\mathcal F}
+\sum_{e\in E}f_e c_e(f_e).
+\end{equation}
+
+Here $f_e$ is edge flow, $c_e$ travel time on that edge, $\mathcal P$ the set of routes, and $\mathcal F$ the feasible flows satisfying demand and flow conservation. Route flow and edge flow are related by the network's incidence structure.
+
+An added edge expands the feasible set, so it cannot worsen the system optimum when leaving the edge unused remains possible. It can worsen the equilibrium reached by independent route choice. More available options and a better collectively chosen outcome are separate properties.
+
+Software tools can induce an analogous question: what happens when every participant adopts the locally attractive route? A tool's advantage for its first users may become a system's next queue.
+
+\subhead{Measures and models}
+
+Goodhart's and Campbell's observations concern measures that become targets.\cite{goodhart1975problems,campbell1979assessing} Once a score governs rewards, staffing, access, or reputation, participants have a reason to reshape their behavior around it.
+
+A test-coverage percentage can rise without covering the dangerous failures. A support team can close tickets faster while transferring unresolved work to customers. A hospital metric can change which cases receive attention. The measured variable enters the control loop.
+
+Verification systems face the same problem. Improving the resolution of a score helps while the score remains connected to the objective. A strong incentive to optimize the proxy can make that connection weaker.
+
+The Lucas critique asks what happens when a policy changes the behavioral relations used to predict its effects.\cite{lucas1976econometric} Reflexivity emphasizes how participants' beliefs and actions can help shape the object they describe.\cite{soros1987alchemy} A risk model can influence the positions institutions take; a public forecast can change demand; a staffing model can alter the behavior it is later asked to explain.
+
+Once a prediction becomes an input to action, it becomes part of the next state. A useful model must therefore be evaluated in use, including the responses its use induces.
+
+\subhead{Risk and the work left over}
+
+Risk compensation concerns changes in exposure after a safety improvement.\cite{peltzman1975effects} A lower chance of failure per event can encourage more events, higher speed, more leverage, or less attention.
+
+With exposure rate $n$, failure probability $p$, and mean loss per failure $d$,
+
+\begin{equation}
+\mathcal R=pnd,
+\qquad
+d\mathcal R=nd\,dp+pd\,dn
+\quad(d\ \mathrm{held\ constant}).
+\end{equation}
+
+For a small reduction in $p$ and increase in $n$, expected loss falls to first order when
+
+\begin{equation}
+\frac{|dp|}{p}>\frac{dn}{n}.
+\end{equation}
+
+The severity $d$ and the distribution of exposure also matter. A gain for one group can be accompanied by a cost to another. Risk compensation has to be assessed in its setting.
+
+Automation changes the distribution of tasks. Bainbridge's \emph{Ironies of Automation} describes a persistent difficulty: routine operations disappear from human practice, while unusual failures demand a rapid and skilled takeover.\cite{bainbridge1983ironies}
+
+People can perform fewer interventions and face a harder average intervention. They may have less recent experience of the process and less time to reconstruct its state. On-call engineering makes the structure familiar: an automated service can run quietly for a long time, then deliver an exceptional incident to someone who must diagnose it under pressure.
+
+More capable AI can absorb a larger share of routine judgment. The remainder may then contain a higher concentration of ambiguous, consequential, and poorly documented cases. Deployment has to provide enough authority, information, practice, and time for the role it leaves to people.
+
+\subhead{Where the pressure goes}
+
+These mechanisms concern different variables: demand, route choice, incentives, expectations, exposure, and task distribution. Their shared lesson is a method of inquiry. After a local improvement, follow the system's response.
+
+Where does the extra volume go? Which equilibrium becomes attractive? What does the metric now reward? What changes when the forecast is believed? Who takes the additional risk? Who handles the exceptional case?
+
+Viscosity can move between locations: from energy to cooling, generation to verification, routine execution to incident handling, and local performance to coordination. Total cost can fall as well. An account that only records the improved component cannot distinguish those outcomes.
+
+Energy supply and aging infrastructure add another constraint. Net usable energy depends on the technology, location, and boundary used to count energy invested in obtaining it. Maintenance depends on the condition of assets and the service required of them. Those costs need to be followed alongside demand.
+
+The mature question is how the new operating arrangement performs after people and organizations have responded. The local improvement starts the analysis.
+
+\subsection{After the Age of the Better Tool}
+
+\subhead{Who bears the transition}
+
+Costs move unevenly. A new process can remove friction from a customer's experience while adding pressure to a driver, an operator, a clinician, or a maintainer. Whether total efficiency improves and whether the distribution is acceptable are separate judgments.
+
+Digital payments, navigation, simulation, automated experiments, and coding tools have delivered substantial gains. Political choices, capital markets, institutional competence, and culture shape what happens to those gains. The viscosity framework follows the material and organizational passage from an available capability to an outcome people can use.
+
+\subhead{Three entangled paradoxes}
+
+The first is the efficiency paradox of personal value. When a person's place rests entirely on outperforming a tool, a better tool makes that place precarious. Training and expertise can remain useful while becoming a less secure basis for recognition. A person cannot obtain a durable claim to dignity by winning every future benchmark.
+
+The second is the escape paradox. Virtual freedom still needs equipment, energy, networks, maintenance, and bodies. Moving an activity online can reduce its material demands. It also rearranges the dependencies through which that freedom is supplied.
+
+The third is the meaning paradox. A person may lose the pride of authorship while remaining necessary to keep the physical system running. The role offers usefulness without enough control, responsibility without enough authority, or income without recognition. The space between a useful component and a free participant becomes politically important.
+
+\subhead{From performance to a place in the world}
+
+These problems change the question. Alongside “How can I perform this task better?” comes “What can establish my place when the output is widely available?”
+
+Judgment, responsibility, relationships, and the power to accept or refuse consequences supply parts of an answer. Their value depends on arrangements that make those powers real. A nominal human supervisor who cannot stop a system has little authority to exercise.
+
+The material lag provides time to build such arrangements. The window moves as machines improve, costs change, and environments become easier to automate. It offers a transition interval, with no automatic settlement at its end.
+
+History supplies repeated migrations of the evidence of value. Writing changed the role of memory. Printing changed access to texts and the institutions of interpretation. Steam power changed the place of muscular work. Computers changed the value of executing explicit rules. Generative systems are changing the evidential role of symbolic output.
+
+Each transition created new roles and destroyed old ones unevenly. A displaced copyist did not automatically become an editor; an artisan did not automatically become an engineer. Access to the new role had to be built and contested.
+
+The same will be true of verification, authorization, care, and responsibility. Platforms can absorb these roles, contracts can divide them, and institutions can concentrate them. Scarcity alone gives no guarantee that people who do the work will control it or receive its value.
+
+The practical task is to connect technical capability with reliable execution and legitimate participation. Remove wasted work. Improve evidence. Give authority to the people expected to intervene. Establish where consequences return. A society's ability to generate alternatives becomes useful when it can choose, enact, and sustain them.
+
+One question remains underneath the account. Why did intelligence arise in a world organized by energy gradients, dissipation, and material constraint? Until that is answered, the constraints can look like an obstacle placed in its way. The next chapter starts from their role in its origins.
+
+\furtherreading{
+Kurt Gödel, \textit{On Formally Undecidable Propositions of Principia Mathematica and Related Systems}\\
+Hans Moravec, \textit{Mind Children}\\
+W. Stanley Jevons, \textit{The Coal Question}\\
+Dietrich Braess, “On a Paradox of Traffic Planning”\\
+Donald T. Campbell, “Assessing the Impact of Planned Social Change”\\
+Sam Peltzman, “The Effects of Automobile Safety Regulation”\\
+Lisanne Bainbridge, “Ironies of Automation”\\
+Nassim Nicholas Taleb, \textit{Skin in the Game}}

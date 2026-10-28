@@ -1,0 +1,66 @@
+\section{Exploration, Control, and Verification}
+
+“More intelligent” hides several different ambitions. A system might produce more ideas, act with less delay, consume fewer resources, or offer stronger assurance. Progress can improve several at once. Designing an actual system still requires deciding how much of each the task demands.
+
+\subsection{A Constraint Triangle}
+
+Resources include computation, storage, sensing, communication, actuation, redundancy, and maintenance. Time includes decision latency, observation windows, physical response, and recovery. Assurance includes the evidence and safeguards needed to trust a result in its intended use.
+
+These demands create a constraint triangle. Faster action may use less evidence. Stronger assurance may require more testing, narrower scope, or additional hardware. A low budget may require a simpler task. The triangle is a design framework; its frontier must be measured for a particular system.
+
+Energy shows why efficiency and total demand need separate ledgers. Let $D$ be consistently defined work performed during a period and $e$ electricity per unit of that work. Then
+\begin{equation}
+ E=De,\qquad
+ \frac{\dot E}{E}=\frac{\dot D}{D}+\frac{\dot e}{e}.
+\end{equation}
+The second identity assumes positive, differentiable quantities. The growth rates have units of inverse time. Better efficiency can coexist with rising total consumption when demand grows faster.
+
+The IEA's 2026 work on AI and electricity documents precisely why these accounts need to be separated: task-level improvements can accompany rapid expansion of infrastructure demand \cite{iea2026questions,iea2026powering}. The task definition matters. A token, a completed service request, and a solved engineering problem are different units of useful work.
+
+Assurance has an equally concrete boundary. As of September 2026, the FDA reported more than 1,600 AI-enabled medical devices authorized for marketing in the United States \cite{fda2026aidevices}. Each authorization concerns a particular device and intended use. The regulator's public list is also a periodically updated identification resource with stated coverage limits \cite{fda2026ailist}. Counting entries measures a deployment record; it does not measure unrestricted medical competence.
+
+Some checks can become much faster through better proofs, tools, or experimental design. Others depend on waiting for a physical event or obtaining enough exposure to estimate a risk. “Verification takes time” becomes useful only when the project identifies which part of the time is reducible.
+
+At a fixed budget, one can write
+\begin{equation}
+ B_{\mathrm E}+B_{\mathrm C}+B_{\mathrm V}=B,
+\end{equation}
+where the three allocations support exploration, control, and verification in a common accounting unit. Shared infrastructure must be allocated consistently. The equality expresses a budget, while the shape of the tradeoff remains an engineering question.
+
+\subsection{Three Jobs for Intelligence}
+
+\textbf{Exploration expands the candidate space.} It generates designs, hypotheses, explanations, molecules, and strategies. Its value lies partly in reaching alternatives that established procedures would miss.
+
+Exploration benefits from cheap rejection. A surprising proposal can be useful even when many neighboring proposals fail. A fabricated factual premise, however, is still an error when presented as evidence. A good exploratory interface marks the difference between a hypothesis worth investigating and a fact on which the investigation may rely.
+
+\textbf{Control keeps action inside a usable region.} It responds to disturbances, manages limits, coordinates timing, and decides when to degrade or stop. In a power system, aircraft, production line, or vehicle fleet, novelty is useful only when the resulting behavior fits the safety and performance envelope.
+
+Control purchases reliability through appropriate sensing, mechanics, feedback, redundancy, and operating constraints. The strongest controller may be the one that refuses an action early enough to preserve recovery.
+
+\textbf{Verification exposes what the other two have missed.} It checks sources, searches for counterexamples, challenges assumptions, measures failure modes, and investigates delayed consequences. Its output can be a proof, an estimate, a failed test, or a narrower claim.
+
+Verification has its own productivity. A better test can reject a weak design earlier. A reusable proof can remove repeated checking. An independent observation can resolve an expensive dispute. Slow feedback deserves investment in informative experiments, rather than ceremonial caution.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabularx}{\textwidth}{@{}lYYY@{}}
+\toprule
+& Exploration & Control & Verification\\
+\midrule
+Primary question & What might work? & What action keeps this usable? & What has actually been established?\\
+Useful output & A promising candidate & A stable, bounded trajectory & Evidence about a claim and its limits\\
+Failure to watch & Candidate volume mistaken for progress & A locally sensible correction that destabilizes the whole & A convincing check that misses the relevant failure\\
+\bottomrule
+\end{tabularx}
+\caption{Three functions that can share models while requiring different evidence and interfaces.}
+\end{table}
+
+\subsection{The Architecture Between Them}
+
+These functions may run in one model or in many. Functional differentiation does not dictate a particular number of agents. It dictates inspectable handoffs.
+
+How does a candidate enter a test? What evidence permits execution? How does execution revise the next candidate? Who can interrupt the process? Which failure invalidates a previous approval? A system's answers to these questions determine how much general capability it can use safely.
+
+A general model can coordinate search across domains while specialized loops handle contact, timing, or proof checking. The upper layer becomes more useful when the lower layers expose reliable contracts. The result may feel like a single intelligence to its user even though its assurance comes from several mechanisms.
+
+The competition is consequently architectural as well as computational. Better models increase what can be proposed. Better interfaces increase what can become dependable action.

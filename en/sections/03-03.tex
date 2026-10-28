@@ -1,0 +1,67 @@
+\section{Overlays and the Complexity Ratchet}
+
+\subsection{Why New Systems Grow on Old Ones}
+
+\subhead{Three bills for reconstruction}
+
+Replacing a live system presents three bills. Its material assets have to be changed. Service has to continue through the transition. Its participants have to coordinate around new rules and interfaces.
+
+An overlay can avoid paying all three immediately. Navigation uses existing roads. A hospital assistant uses existing records and staff. A sensor layer observes an existing factory. New capability attaches to the installed base.
+
+The strategy is often rational. Its apparent lightness can conceal work needed to translate between layers, maintain consistency, and recover when the overlay fails.
+
+\subhead{The price of leaving the environment alone}
+
+Moravec's contrast between formal intellectual tasks and everyday sensorimotor competence helps explain why a computer-centered route initially spreads unevenly.\cite{moravec1988} Standardizing a task can remove difficulties that a more general machine would have to handle.
+
+Autonomous driving takes one version of the choice. A heavily controlled route can simplify operation; public mixed traffic requires the vehicle and service to accommodate a much larger range of conditions. Evidence about operational safety has to match the chosen domain.\cite{kalra2016}
+
+The vehicle carries some complexity because the surrounding world remains available to many kinds of user. This can be a good social and engineering choice. Its costs belong in the vehicle, operating service, and governance account.
+
+\subsection{What Accumulates Between Layers}
+
+\subhead{A model of a ratchet}
+
+Suppose adding a layer contributes $c$ units of maintenance complexity and causes existing complexity to grow by fraction $\alpha$:
+
+\begin{equation}
+C_{n+1}=(1+\alpha)C_n+c.
+\label{eq:ratchet-recursion}
+\end{equation}
+
+For constant $\alpha>0$,
+
+\begin{equation}
+C_n=(1+\alpha)^nC_0+
+\frac{c}{\alpha}\big[(1+\alpha)^n-1\big].
+\label{eq:ratchet-floor}
+\end{equation}
+
+For $\alpha=0$, the result is $C_0+nc$. Positive proportional interaction produces exponential growth in this model. Real systems can consolidate, standardize, retire components, and remove dependencies; their growth need not follow the recurrence.
+
+The ratchet appears when removing a layer leaves obligations behind. Upstream systems now expect its data; downstream workers expect its decisions; exception procedures depend on its presence. Another arrangement must assume those functions before removal is complete.
+
+A residual model $C_n^{\mathrm{res}}=\beta_n C_n$ records a fraction that remains after a specified removal, with $\beta_n$ to be measured. It is a description of the chosen transition, rather than a universal lower bound.
+
+\subhead{Compatibility and deployment costs}
+
+Compatibility work preserves relations between versions, formats, interfaces, and operating practices. Deployment work establishes a service in actual use: integration, testing, monitoring, support, incident response, and responsibility.
+
+Under a particular additive removal protocol, one may define an index
+
+\begin{equation}
+K_n=\sum_{k=1}^n\big(C_k-C_k^{\mathrm{res}}\big).
+\label{eq:compat-tax}
+\end{equation}
+
+Counting this as labor or money requires cost weights and a check that the same work is not counted twice. The useful empirical question is how much work it takes to release the dependencies, not how large an index can be made.
+
+An overlay earns its place when its total benefit exceeds these costs. Its risk is institutional permanence by default: each new layer is temporary until someone asks what removal would require.
+
+\subhead{Designing an exit}
+
+A credible overlay has an exit condition. It may be retired after a migration, consolidated into a stable module, or replaced by a simpler underlying process. Parallel operation should have a purpose and a horizon.
+
+Some interfaces deserve long lives. Others continue because no one owns the cleanup. The complexity ratchet is strongest where benefit belongs to the builder and maintenance belongs to someone else.
+
+The next section follows what happens when input keeps arriving faster than the system can be rebuilt.

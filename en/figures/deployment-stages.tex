@@ -1,0 +1,18 @@
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,font=\scriptsize,
+box/.style={draw=slate!45,rounded corners=2pt,align=left,inner sep=6pt,text width=3.05cm,minimum height=1.7cm},
+arr/.style={-{Stealth[length=2mm]},line width=0.8pt,slate}]
+\node[box,fill=deepblue!8] (a) at (0,0) {\textbf{Capability}\\Task performance\\Models, vehicles, tools};
+\node[box,fill=terra!9] (b) at (4.2,0) {\textbf{Local deployment}\\Validation and permissions\\Facilities and response};
+\node[box,fill=forest!9] (c) at (8.4,0) {\textbf{Service in operation}\\Trips and expansion\\Cost, failures, outcomes};
+\draw[arr] (a)--(b);
+\draw[arr] (b)--(c);
+\draw[arr] (c.south) -- ++(0,-0.5) -| (b.south);
+\node[align=center,text=slate] at (4.2,-1.9) {Madrid: preparation announced Oct.\ 20, 2026\\First-rider target: 2027};
+\node[align=center,text=slate] at (4.2,-2.9) {Toronto: preparation announced Oct.\ 16, 2026\\First-rider target: 2028};
+\node[align=center,text=slate] at (8.4,-4.0) {Five US markets: expansion announced Oct.\ 27\\Nearly 250 sq.\ miles over the following week};
+\end{tikzpicture}
+\caption{Capability, deployment, and operation are different kinds of progress. Examples follow Waymo's October 2026 announcements; targets retain their status as plans.}
+\label{fig:deployment-stages}
+\end{figure}

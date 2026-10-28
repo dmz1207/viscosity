@@ -1,0 +1,244 @@
+\section{广义黏滞框架：R-T-G 权衡模型}
+
+物质与能量的势垒、过程占用的时间、连接结构带来的牵连，共同影响一次状态转移的代价。比较之前，需要固定任务、结果标准、系统边界和考察期限。本书用$(R,T,G)$描述这三类约束，用广义黏滞系数$\eta$记录选定口径下的相对转移代价。坐标描述阻力来自哪里，系数描述转移有多难。
+
+\subhead{从三个观察到一组参数}
+
+转移代价与三个约束坐标之间的关系记为：
+\begin{equation}
+\eta = f(R,\;T,\;G)
+\label{eq:eta-rtg}
+\end{equation}
+其中$R$是资源势垒，$T$是时间刚性，$G$是拓扑耦合。$R$考察任务需求与可用资源的关系，$T$考察过程时间与可用时间窗的关系，$G$考察改变牵动的依赖面、同步要求与回滚困难。三个坐标需要分别取证。它们可以同时改善，也可以相互牵制；政治、组织和分配条件则影响哪些路径能够被选择。
+
+要让这个写法进入使用，需要给 $f$ 一个具体形式。本书采用指数形式作为工作模型：
+\begin{equation}
+\eta = \eta_0 \exp(\alpha R + \beta T + \gamma G)
+\label{eq:eta-exp}
+\end{equation}
+$\eta$取同一任务在固定口径下的实际转移代价与参照代价之比，无量纲。代价口径可以选用费用、总工时或单位合格结果的平均通过时间，同一研究须保持一致；多种代价暂不能折算时，分别报告各项。$\eta_0$为三个坐标处于参照值时的基准系数。$R$、$T$、$G$采用明确基准归一化，$\alpha$、$\beta$、$\gamma$表示相应约束每增加一单位时对数代价的变化。指数式假定这三个边际效应在所考察区间内近似恒定，交互作用暂不单列；是否适用，由数据与残差检验决定。
+
+三个坐标各自管什么、压缩它要付什么代价，可以先列成一张表，后面各章反复回到这三行。
+
+\begin{table}[ht]
+\centering
+\caption{$\eta$ 的三个坐标：各自回答的问题、阻力来源与压缩的代价落点}
+\label{tab:ch2-rtg}
+{\small
+\begin{tabularx}{\textwidth}{@{}l >{\RaggedRight\arraybackslash}p{1.75cm} >{\RaggedRight\arraybackslash}p{3.35cm} >{\RaggedRight\arraybackslash}p{2.5cm} >{\RaggedRight\arraybackslash}X@{}}
+\toprule
+坐标 & 回答的问题 & 阻力来源 & 压缩手段 & 代价落点 \\
+\midrule
+$R$ 资源势垒 & 推得动推不动 & 能量、材料、设备、资本、土地、供应链与维护 & 加大投入，把资源集中到产线上 & 能耗、排放、资本占用与资源枯竭 \\
+$T$ 时间刚性 & 来得及来不及 & 传热、扩散、水化、生长、代谢、认证与协商 & 并行、赶工、压缩流程与公示期 & 风险推向未来，缺陷后置到验收之后 \\
+$G$ 拓扑耦合 & 传得开传不开 & 接口、标准、利益格局、路径依赖与责任划分 & 增设接口、冗余、监控与合规结构 & 系统复杂度与维护负担上升，局部效率换整体成本 \\
+\bottomrule
+\end{tabularx}}
+\end{table}
+
+表\ref{tab:ch2-rtg}列出的，是压缩约束的手段及其可能增加的支出。增加设备可能缩短工期，增加审核可能降低失败风险，接口改造也可能同时减少协调与维护成本。实际结果需要核算全部相关环节。支出由谁支付、风险由谁承受，还取决于合同、制度和参与者的决定权。
+
+\subhead{参数置换}
+
+三个坐标在工程上经常联动。增加设备和并行作业可以缓解时间约束，同时增加资本与维护支出；标准化也可能同时降低资源消耗与协调困难。比较自然合成与人工合成时，同样要把光照、土地、反应器、原料、能量载体和控制条件纳入同一边界。路径改变以后，资源、时间与结构的组合随之改变，净收益由具体工艺决定。
+
+置换关系可以从 \eqref{eq:eta-exp} 直接读出来：把 $\eta$ 固定，两边取对数再微分，得到
+\begin{equation}
+\alpha\,\mathrm{d}R+\beta\,\mathrm{d}T+\gamma\,\mathrm{d}G=0,
+\qquad
+\left.\frac{\mathrm{d}R}{\mathrm{d}T}\right|_{\eta,\,G}=-\frac{\beta}{\alpha}
+\label{eq:exchange-rate}
+\end{equation}
+下标$\eta,G$表示固定广义黏滞与拓扑坐标。在系数不变的指数模型内，等黏滞面的斜率恒为$-\beta/\alpha$：$T$减少一单位，$R$沿该面增加$\beta/\alpha$单位。这个比值描述模型中维持同一代价水平的坐标组合。工程上能否沿该方向移动，还要检查设备、工艺和预算允许的可行路径。
+
+系数的数值依赖任务、刻度和参照状态。换用另一套归一化，置换比也会变化。跨系统比较需要先统一这些基准。边际比例随状态改变时，可以分区标定系数，或在对数代价中加入交互项，再检验新的形式。
+
+反过来，用长时间换低风险，在高后果领域是标准做法。新药研发要经过毒理、一期、二期、三期和上市后观察，核电设施要经过多轮评审和冗余设计，航空器要做全寿命疲劳试验。这些流程之所以慢，不是因为从业者保守，而是因为 $G$ 太高：错误一旦进入系统，后果沿连接传播，无法隔离，无法回滚。此时压缩 $T$ 不是加速，是把风险敞口推向未来。还有一种置换最容易被忽略：为了降低局部摩擦而增加结构。给旧系统加装传感器、中间件、适配层、调度平台、数据接口和审计模块，可以让操作层变得顺畅。但每一个新增环节都增加了一条连接，$G$ 随之上升。局部的摩擦下去了，系统的牵连度上来了。
+
+电力输送显示了另一种配置。提高直流输电的电压等级，可以在相应设计条件下扩大输送容量、降低长距离输电损耗，代价包括换流站、绝缘和控制系统的建设。通道建成以后，还要与送受端电网协调运行。资本支出、线路损耗和网络依赖在这里重新组合，净效果须按整条输送链核算。
+
+这三种置换有一个共同点：它们都是策略性妥协，不是精密等价交换。换过去多少，换回来多少，取决于具体系统的结构，不存在通用的汇率。也正因为不存在通用的汇率，置换的收益只能逐案计算，不能凭一般原则预先判定。
+
+\begin{figure}[ht]
+\centering
+% >>>>>>>>>> figs/fig-rtg-space.tex >>>>>>>>>>
+% 图 5-1  广义黏滞：参数空间与权重
+% (a) R-T 平面上的等黏滞线 R+T=c（标签沿线斜置、垂直离线 2pt）
+% (b) 三项权重 3x3 色块（格内只有数值，颜色深浅=权重）
+\begin{tikzpicture}[x=1cm, y=1cm, font=\small,
+  ax/.style={-{Stealth[length=2.0mm]}, ink, line width=0.6pt},
+  tick/.style={font=\scriptsize, text=slate},
+  iso/.style={font=\scriptsize, text=slate, inner sep=0pt},
+  ptlab/.style={font=\scriptsize\heiti, anchor=center},
+  colh/.style={anchor=center, font=\scriptsize\heiti, text=slate},
+  val/.style={anchor=center, font=\scriptsize, text=ink},
+  rowlab/.style={anchor=east, font=\scriptsize\heiti}
+]
+% 左边留出余量：纵轴标签「$T$ 时间刚性」以轴心居中，左端伸到轴外约 0.7cm，
+% 原来的 0.54 会把它切掉 2.1pt（用 _figclip.py 量出来的），成书上看不出来但确实是切口。
+\useasboundingbox (0.30,0.72) rectangle (13.06,-7.15);
+
+\def\ax{1.00} \def\ay{-6.00} \def\aw{4.90} \def\ah{4.50}
+\def\nx{0.7365} \def\ny{0.6764}   % 屏幕法向：指向 R+T 增大的一侧（离线 2pt 用）
+\def\rota{-42.55}                 % 等黏滞线在屏幕上的倾角
+
+% ================= (a) R-T 平面上的等黏滞线 =================
+% 判据式放在图上方空白处，不压任何线
+\node[font=\small, text=ink, anchor=center] at (4.60,-0.92)
+      {$\eta=\eta_0\exp(\alpha R+\beta T+\gamma G)$};
+
+\draw[ax] (\ax,\ay) -- ({\ax+\aw+0.40},\ay)
+      node[anchor=west, font=\scriptsize, text=ink] {$R$ 资源势垒};
+\draw[ax] (\ax,\ay) -- (\ax,{\ay+\ah+0.08})
+      node[anchor=south, font=\scriptsize, text=ink] {$T$ 时间刚性};
+
+\foreach \v in {0,0.5,1} {
+  \pgfmathsetmacro\xx{\ax+\aw*\v}
+  \draw[slate!55, line width=0.4pt] (\xx,\ay) -- (\xx,\ay-0.08);
+  \node[tick, anchor=north] at (\xx,\ay-0.10) {\v};
+  \pgfmathsetmacro\yy{\ay+\ah*\v}
+  \draw[slate!55, line width=0.4pt] (\ax,\yy) -- (\ax-0.08,\yy);
+  \node[tick, anchor=east] at (\ax-0.10,\yy) {\v};
+}
+
+% 等黏滞线：R+T=c，η/η0 = e^c
+\foreach \c in {0.45, 0.90, 1.35, 1.80} {
+  \pgfmathsetmacro\xa{\ax+\aw*min(\c,1.0)}
+  \pgfmathsetmacro\ya{\ay+\ah*(\c-min(\c,1.0))}
+  \pgfmathsetmacro\xb{\ax+\aw*max(\c-1.0,0)}
+  \pgfmathsetmacro\yb{\ay+\ah*min(\c,1.0)}
+  \draw[slate!50, line width=0.6pt] (\xa,\ya) -- (\xb,\yb);
+}
+% 标签：沿线斜置，垂直离线 2pt，落在 R+T>c 一侧，不压线
+\foreach \cx/\cy/\lb in {%
+  2.265/-5.041/{1.6},%
+  1.934/-2.712/{2.5},%
+  5.315/-3.792/{3.9},%
+  5.462/-1.902/{6.0}} {
+  \node[iso, rotate=\rota, anchor=south] at (\cx,\cy) {$\eta/\eta_0\approx\lb$};
+}
+
+% 三个介质点
+\node[circle, fill=deepblue, inner sep=1.8pt] at ({\ax+\aw*0.16},{\ay+\ah*0.16}) {};
+\node[ptlab, text=deepblue, anchor=east] at ({\ax+\aw*0.16-0.14},{\ay+\ah*0.16}) {比特};
+\node[circle, fill=terra, inner sep=1.8pt] at ({\ax+\aw*0.62},{\ay+\ah*0.44}) {};
+\node[ptlab, text=terra, anchor=east] at ({\ax+\aw*0.62-0.14},{\ay+\ah*0.44}) {原子};
+\node[circle, fill=forest, inner sep=1.8pt] at ({\ax+\aw*0.30},{\ay+\ah*0.78}) {};
+\node[ptlab, text=forest, anchor=west] at ({\ax+\aw*0.30+0.14},{\ay+\ah*0.78}) {生命};
+
+% 两种移动：沿等黏滞线置换（骑在 c=1.35 线上）/ 跨线上升
+\draw[-{Stealth[length=1.9mm]}, deepblue!85, line width=0.8pt]
+      (3.058,-1.815) -- (3.842,-2.535);
+\node[font=\scriptsize\heiti, text=deepblue!85, rotate=\rota, anchor=south]
+      at (3.517,-2.156) {置换};
+\draw[-{Stealth[length=1.9mm]}, rust!85, line width=0.9pt]
+      (4.234,-5.55) -- (4.822,-4.47);
+\node[font=\scriptsize\heiti, text=rust!85, anchor=north west]
+      at (4.90,-4.35) {跨线};
+
+% ================= (b) 三项权重的相对次序（定性，不给数值） =================
+% 说明：正文明确写「α、β、γ 的数值须由实证确定」，故此处只标相对次序与色深，
+%       不出现任何具体数值，避免图中出现正文拒绝给出的、且无出处的参数值。
+\def\bx{9.05} \def\cw{1.30} \def\ch{1.10} \def\hy{-2.32}
+% 表头（列）
+\node[colh] at ({\bx+\cw*0.5},\hy) {$\alpha\,(R)$};
+\node[colh] at ({\bx+\cw*1.5},\hy) {$\beta\,(T)$};
+\node[colh] at ({\bx+\cw*2.5},\hy) {$\gamma\,(G)$};
+% 行：标签 + 逐格底色深浅 = 相对次序（深=主导、中=参与、浅=弱），不给数值
+\foreach \i/\nm/\mc/\a/\b/\c/\sa/\sb/\sc in {%
+  1/{比特}/{deepblue}/{弱}/{参与}/{弱}/{12}/{38}/{12},%
+  2/{原子}/{terra}/{主导}/{参与}/{弱}/{78}/{38}/{12},%
+  3/{生命}/{forest}/{参与}/{主导}/{参与}/{38}/{78}/{38}} {
+  \pgfmathsetmacro\yy{\hy-0.28-\ch*(\i-0.5)}
+  \node[rowlab, text=\mc] at ({\bx-0.14},\yy) {\nm};
+  \fill[\mc!\sa] ({\bx},{\yy+\ch*0.5}) rectangle ({\bx+\cw},{\yy-\ch*0.5});
+  \fill[\mc!\sb] ({\bx+\cw},{\yy+\ch*0.5}) rectangle ({\bx+\cw*2},{\yy-\ch*0.5});
+  \fill[\mc!\sc] ({\bx+\cw*2},{\yy+\ch*0.5}) rectangle ({\bx+\cw*3},{\yy-\ch*0.5});
+  \node[val] at ({\bx+\cw*0.5},\yy) {\a};
+  \node[val] at ({\bx+\cw*1.5},\yy) {\b};
+  \node[val] at ({\bx+\cw*2.5},\yy) {\c};
+  \draw[white, line width=1.2pt] ({\bx},{\yy+\ch*0.5}) rectangle ({\bx+\cw*3},{\yy-\ch*0.5});
+}
+\draw[slate!50, line width=0.6pt] (\bx,{\hy-0.28}) rectangle ({\bx+\cw*3},{\hy-0.28-\ch*3});
+% 说明：点明这是相对次序而非测定值（必须 <= 面板宽度 3.9cm，即 <=15 个汉字，否则会被裁）
+\node[anchor=north west, font=\scriptsize, text=slate]
+      at ({\bx-0.14},{\hy-0.28-\ch*3-0.10})
+      {深浅仅表相对次序，非测定值};
+
+% ================= 栏标题（一律在内容下方）=================
+\node[anchor=north, font=\footnotesize\heiti, text=slate] at (3.45,-6.55) {(a) 等黏滞线};
+\node[anchor=north, font=\footnotesize\heiti, text=slate] at (11.00,-6.55) {(b) 三项权重的相对次序（示意）};
+\end{tikzpicture}
+
+% <<<<<<<<<< figs/fig-rtg-space.tex <<<<<<<<<<
+
+\caption{资源、时间与拓扑构成的约束空间。同一个状态转移可以有多种路径，路径可以改变总代价，也可以改变三类约束的组合。(a) 一族等黏滞线，同一条线上的黏滞系数相同；箭头给出代价在两个维度之间置换、以及跨到更高黏滞线这两种运动。(b) 三项权重在三种介质上的次序，它列出待检验的机制预期，具体次序与大小均须由任务数据确定。}
+\label{fig:rtg-space}
+\end{figure}
+
+\subhead{代价从哪里来}
+
+代价的转移与物理下限需要分开核算。对与温度$T_0$、压力$p_0$的环境交换热和体积功的闭合反应系统，给定反应物与产物状态，可逆过程的最小净非体积输入功由吉布斯自由能差给出。实际过程中的熵产生增加了相应支出：
+\begin{equation}
+W_{\min}=\Delta G=G_{\mathrm{f}}-G_{\mathrm{i}},
+\qquad
+W_{\mathrm{act}}=\Delta G+T_{0}\,S_{\mathrm{gen}},
+\qquad
+S_{\mathrm{gen}}\ge 0
+\label{eq:thermo-floor}
+\end{equation}
+$G_{\mathrm{i}}$、$G_{\mathrm{f}}$是初末状态的吉布斯自由能，$W_{\min}$与$W_{\mathrm{act}}$分别是可逆与实际过程所需的净非体积输入功，单位均为焦耳；$S_{\mathrm{gen}}$为熵产生，$T_0S_{\mathrm{gen}}$为相应的不可逆损失。相同初末状态与环境条件下，工艺改进可以减少损失，使实际支出接近下限。实际总能耗还要计入边界内的物料处理、热源和辅助设备。
+
+金属铝提供了一个可以直接对照的例子。从氧化铝电解得到原铝，每吨的电耗通常在一万三千千瓦时以上，而用回收铝做再生铝，能耗只有前者的百分之几，因为金属态已经在废料中存在，需要支付的是重熔与精炼，而不是从氧化物里把铝还原出来\cite{quinkertz2001scenario}。两条路线的差别不在中间的技术高低，而在起点不同：一条起点是氧化物，一条起点是金属。“参照态”因此不是一个抽象的技术设定，它由原料、能源和废弃物的实际可得性决定。
+
+给定初末状态与环境条件，理论最小功构成过程的下限。算法可以筛选工艺、减少试错，并帮助实际过程降低不可逆损失。更换原料、产物或环境条件，下限须重新计算。\key{智能可以优化路径，不能取消给定状态转移的物理条件。}
+
+结构成本需要另作统计。设$C_{\mathrm{loc}}$为操作环节的复杂度，$C_{\mathrm{rest}}$为同一边界内其余环节的复杂度，采用一致口径时，总复杂度的变化记为
+\begin{equation}
+\Delta C_{\mathrm{tot}}=\Delta C_{\mathrm{loc}}+\Delta C_{\mathrm{rest}}
+\label{eq:complexity-transfer}
+\end{equation}
+三项须采用相同的复杂度指标，例如维护接口数、依赖关系数或经过说明的加权工作量。局部简化若伴随后台成本增加，说明发生了转移；两项之和为负，说明总复杂度下降。模块化、标准化与冗余清理都可能带来后一种结果。边界与指标确定以后，转移了多少、净减少了多少，才能被分别检验。
+
+\subhead{框架的用途与边界}
+
+把这组参数放在一起，可以回答一类此前难以说清的问题：为什么某些技术明明更优，却推不动。答案往往是维度错配。技术方案在它自己的量纲上是优的（能耗更低、速度更快、精度更高），但它所要嵌入的系统在另一个维度上已经饱和。一条更省油但需要重建加油网络的动力路径，卡在 $G$ 上；一种更精确但需要十年随访的疗法，卡在 $T$ 上；一项更高效但需要新建电网的产业，卡在 $R$ 上。这类失败不是因为方案不够好，而是因为评价方案的尺度和系统吸收方案的尺度不是同一个。用 \eqref{eq:eta-exp} 看，引入一项技术相当于在三个坐标上同时产生一个增量，
+\begin{equation}
+\frac{\eta_{\mathrm{new}}}{\eta_{\mathrm{old}}}
+=\exp\bigl(\alpha\,\Delta R+\beta\,\Delta T+\gamma\,\Delta G\bigr),
+\qquad
+\Delta X=X_{\mathrm{new}}-X_{\mathrm{old}},\quad X\in\{R,T,G\}
+\label{eq:mismatch}
+\end{equation}
+$\eta_{\mathrm{old}}$与$\eta_{\mathrm{new}}$采用相同任务、代价口径、基准和系数。三项增量的加权和为负，模型给出代价下降；为正则给出上升。某一部件能耗下降，可能被新增基础设施、切换和验证支出抵消。精度提高或响应加快要分别落实到相应坐标；同一资源维度内的节约与新增支出，则先合成为净变化，再代入公式。
+
+维度错配可以对照着看两个极端。受控核聚变把 $R$ 和 $T$ 同时推到极高：等离子体约束需要大型磁体、大功率电源与低温系统的投入，而劳森判据要求密度、温度与约束时间的三重积达到门槛，
+\begin{equation}
+n\,T\,\tau_{E}\ \gtrsim\ 3\times10^{21}\ \mathrm{keV\cdot s\cdot m^{-3}}
+\label{eq:lawson}
+\end{equation}
+式中 $n$ 是等离子体离子密度，单位为每立方米；$T$ 是离子温度，单位为千电子伏；$\tau_{E}$ 是能量约束时间，单位为秒。三者是相乘关系，门槛是一个乘积值：在其余条件和近似阈值适用时，密度提高一倍，可补偿温度或约束时间中一项降为一半，但三者不能互相替代，也不能由任一者的无限提高来补足其余两者的零。三重积反映运行状态所须满足的条件，装置设计与控制可以改变可达到的参数组合\cite{lawson1957some}。信使RNA 疫苗平台展示了另一种形状：序列设计与候选筛选的 $T$ 被大幅压缩，从拿到病原序列到候选设计只需要数天，但进入人体之后的免疫原性、稳定性、批次一致性和长期安全性仍要按原有时间尺度验证，$T$ 的压缩只发生在链条的前段。这两个例子指向同一个结论：一项技术把 $T$ 压到什么程度，取决于它压的是链条上的哪一段，以及那一段后面还接着什么。
+
+反过来，这个框架也能解释一批“看起来笨但活得久”的方案。冗余、审批、保守参数、人工复核、分段上线，在单点效率上都是损失，但它们降低的是 $G$ 和长尾风险。当系统的失败后果不可回滚时，这些损失是必要支出。这个框架不能解释的东西同样需要说清。它不能解释政治过程、文化差异、资本周期、商业模式和组织能力。一个技术能否落地，还取决于谁受益、谁承担、谁有决定权、预算周期多长、组织有没有执行能力。这些因素在本书的三维坐标之外。广义黏滞不是要把所有社会现象还原成物理量，而是在这些因素之外，提供一个关于介质阻力的底层视角。
+
+本书的领域定位采用公开判据与相对等级，指数模型则给出需要另行标定的数量关系。两种用法分别处理。应用时先固定任务和结果标准，再判断哪些障碍可以消除、哪些成本可以降低或转移、哪些功能需要由其他机制接替。时间约束、依赖结构与资源投入都要按其具体作用评价。
+
+区分这三者，需要分别判断哪些阻力来自资源，哪些来自时间，哪些来自结构，而三者的判断方式并不通用。到这里，本章给出的仍然是一套静态的记账方式：它能在三个坐标上标出一个状态转移的位置，说明一项技术卡在哪一维，却没有回答介质以什么方式响应变化。同一个势差，缓慢施加和快速施加，得到的结果并不相同；比特、原子和生命三种介质对加载速率的反应差别很大，比特层几乎瞬时响应，原子层要按扩散和传热的速率响应，生命层会随着加载速度改变自身的结构。黏滞系数不是常数，它随变化率而变。要走到这一步，需要把注意力从状态的位置转向接口的行为。
+
+\furtherreading{
+Carliss Y. Baldwin and Kim B. Clark, \textit{Design Rules: The Power of Modularity}。\\
+Herbert A. Simon, \textit{The Sciences of the Artificial}。\\
+Charles Perrow, \textit{Normal Accidents: Living with High-Risk Technologies}。\\
+Nancy G. Leveson, \textit{Engineering a Safer World: Systems Thinking Applied to Safety}。\\
+Karl E. Weick and Kathleen M. Sutcliffe, \textit{Managing the Unexpected}。\\
+John D. Sterman, \textit{Business Dynamics: Systems Thinking and Modeling for a Complex World}。\\
+Melanie Mitchell, \textit{Complexity: A Guided Tour}。\\
+Vaclav Smil, \textit{Energy and Civilization: A History}。
+}
+
+% <<<<<<<<<< parts/book-ch02b.tex <<<<<<<<<<
+
+
+% >>>>>>>>>> parts/book-ch03.tex >>>>>>>>>>
+%% ===================== 本章参考文献 =====================
+\printbibliography[heading=subbibliography,title=参考文献]

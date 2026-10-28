@@ -1,0 +1,143 @@
+\section{Topological Rigidity: When Connections Become Weight}
+
+A better destination can be easy to describe and difficult to reach. The difficulty may lie between the nodes: a component's dependencies, the order in which other parts must change, and the consequences of disturbing them.
+
+\subsection{Coupling Density and Effective Mass}
+
+\subhead{A goal needs a transition}
+
+A hospital's new diagnostic system needs records, staff, laboratory processes, purchasing, review, and responsibility to work together. A faster port process can run into rail capacity outside the gate. A software module can be technically improved and incompatible with the accounting system that pays for its operation.
+
+These connections give a small component a large transition cost. Its physical mass may be negligible while changing it requires many other parties to move. The book calls this \term{effective inertia}: a structural account of resistance, rather than a new quantity of mechanical mass.
+
+For $N$ nodes, the maximum number of undirected pairwise links is
+
+\begin{equation}
+L_{\max}=\frac{N(N-1)}2.
+\end{equation}
+
+The count shows how many possible dependencies can exist. Real networks can remain sparse; links also differ in direction, strength, and function. A system's cost cannot be inferred from node count alone.
+
+Network studies distinguish local structure, long-range paths, degree distributions, and the dynamics carried by the links.\cite{boccaletti2006complex,watts1998collective} Small-world work is especially useful for seeing how a few additional links can change distances without making every pair adjacent.\cite{milgram1967smallworld,travers1969experimental}
+
+\subhead{An improvement absorbed by the system}
+
+A local gain can be real and disappear from the aggregate result. Its output encounters another bottleneck, or its benefit is spent accommodating an existing dependency. A faster clinician's report may not change a patient's treatment date if imaging, specialist capacity, and follow-up remain binding.
+
+The point is a diagnostic question: which relation converts the component gain into a service gain? A benchmark evaluates one part of that relation. Deployment evaluates the chain.
+
+Technologies that change interfaces can therefore have effects larger than a component's nominal improvement. Containerization changed how ships, trucks, cranes, ports, and paperwork could connect; its effects depended on a network of complementary investments.\cite{bernhofen2016estimating} Standards can remove repeated translation work and make rearrangement easier.
+
+They also establish a new installed base. A successful interface becomes something other parties expect to remain stable. An improvement produces a fresh history.
+
+\subsection{Percolation and the Solidification of a Network}
+
+\subhead{A local failure gains a route}
+
+Percolation models examine when occupied sites or links form connected structures over large distances.\cite{broadbent1957,erdos1959} Below a threshold, disturbances may remain in small clusters. Above it, the same kind of local event may have a path across much of the system.
+
+The threshold depends on the model and topology. A square lattice, a random graph, and a heterogeneous infrastructure network do not share one critical percentage. The useful question is what can now propagate.
+
+The metaphor of \term{gelation} emphasizes a change in freedom of motion. Parts that once moved separately become constrained by a spanning web. In an organization, adding dependencies can make a change require coordinated movement. The resemblance helps formulate the mechanism; actual organizational coupling needs evidence about its links.
+
+Interdependent networks can fail in cascades because one network's functioning nodes rely on the other.\cite{buldyrev2010} A local reliability score then misses a dependency failure. The distinction between random loss and targeted failure also matters in heterogeneous networks.\cite{albert2000error}
+
+\subhead{Cascades with names and dates}
+
+Historical infrastructure failures make the structure concrete. The 2003 North American blackout involved interacting equipment, operating conditions, awareness, and protection across a connected power system.\cite{uscanada2004} Treating each part's normal performance as an adequate description of the whole would omit the event.
+
+The 2010 Flash Crash and Knight Capital's 2012 trading failure provide different financial mechanisms: rapid interaction among market behavior, automation, deployment, and controls.\cite{sec2010findings,sec2013knight} Their common feature is a fast propagation path. Their causes should not be collapsed into a single story about “too much intelligence.”
+
+The 1999 Mars Climate Orbiter loss concerned an interface and unit mismatch within an organizational and technical process.\cite{nasa1999mishap} Aviation reviews of the 737 MAX likewise examine interacting design assumptions, human roles, integration, and certification rather than only the performance of an isolated function.\cite{jatr2019boeing}
+
+These are historical cases. Their value is the failure mechanism documented in the investigation, not an implication that today's systems are unchanged.
+
+\subhead{Why a pilot scales badly}
+
+A pilot can select its users, concentrate expert attention, isolate a workflow, and provide exceptional support. Scaling reconnects what the pilot temporarily separated. Data formats, staffing, interfaces, maintenance, finance, and responsibility return at the boundary.
+
+Simon called attention to nearly decomposable systems: strong local organization with more manageable interaction between subsystems.\cite{simon1962} Modularity can preserve a local failure boundary and let different parts evolve on different schedules.\cite{baldwin2000design}
+
+An AI pilot that needs continuous exceptional care may be demonstrating the capability of a temporary organization, as well as a model. Scaling requires a repeatable organization for the surrounding work.
+
+\subsection{Hysteresis and Structural Memory}
+
+\subhead{History changes the next choice}
+
+An installed road alters land use. A standard changes equipment purchases. A workflow shapes training and expectations. Later decisions begin from the world those decisions produced.
+
+Path dependence describes how earlier choices alter later costs and options.\cite{david1985clio} Hysteresis describes a response that depends on the path taken, so reversing a control variable does not retrace the original state trajectory.
+
+Material fatigue, magnetic hysteresis, organizational habits, and software dependencies have different mechanisms. In each, an adequate state description includes something carried forward from history.
+
+\subhead{The freedom already committed}
+
+An interface adopted by many organizations can freeze a choice into an obligation. Its continued use may be locally economical even when another arrangement would be better from a clean start. This is the difference between designing a new system and migrating a live one.
+
+Compatibility can protect past investments. It can also preserve duplicated work and old limitations. Retiring the old route requires a plan for the parties whose functions depend on it.
+
+Infrastructure studies examine the invisible installed base through which a new facility becomes usable.\cite{star1999layers} Conway's observation links software structure to communication within the organization that builds it.\cite{conway1968how} The code and the institution can carry the same history.
+
+\subhead{What survives a change of scale}
+
+Physics offers the language of coarse-graining: some microscopic variations disappear at a larger scale, while others remain relevant.\cite{wilson1971renormalization} The comparable organizational question is which local changes can affect the aggregate outcome.
+
+A good tool can be absorbed by a procurement rule or a payment system. A new measurement can be absorbed by the incentives it creates. Measures used to allocate rewards invite the responses discussed by Goodhart and Campbell.\cite{goodhart1975problems,campbell1979assessing}
+
+A removed tool also leaves effects. Users have learned, data have moved, expectations have changed, and contracts have been signed. A rollback plan must specify which state it can recover. Restoring software may leave the surrounding consequences untouched.
+
+\subhead{Making history editable}
+
+A transition architecture includes compatibility, parallel operation, staged cutovers, migration of records, and a credible retirement point. Without retirement, each improvement can become one more permanent layer.
+
+Banking migrations demonstrate the stakes of cutover and service continuity. The TSB migration and regulatory investigation document a transition failure with consequences for access, customers, and operations.\cite{tsb2019migration} A payment process also depends on settlement and trust arrangements beyond the speed of its message.\cite{kahn2009why}
+
+The objective is to make an installed system changeable while it remains in use. That is a capability of the structure.
+
+\subsection{Reachability and the Equilibrium People Choose}
+
+\subhead{Possible is larger than reachable}
+
+A generated plan describes a destination. A reachable destination requires a permitted path from the current state, the resources and time to take it, and conditions under which the result can persist.
+
+There can be many physically feasible paths and a narrow set of socially maintained ones. People respond to prices, rules, expectations, and one another. The equilibrium reached through their choices may be poor even when a better feasible arrangement exists.
+
+Wardrop's traffic framework and work on the cost of uncoordinated routing formalize this distinction in a defined setting.\cite{wardrop1952some,roughgarden2002how} Adding a path expands the feasible set, yet independent users can move to a worse equilibrium. The available capacity and the way it is used require separate analysis.
+
+Road construction can also change demand. Evidence on induced travel examines a further response beyond fixed-demand routing.\cite{duranton2011fundamental} More attractive supply can draw additional use into the system.
+
+\subhead{The option that survives collective use}
+
+AI expands the supply of strategies, recommendations, and entry points. A strategy's effect at low adoption may differ from its effect when many agents use it. A market signal can crowd a trade; a common recommendation can crowd a route; a generated workflow can crowd a shared reviewer.
+
+Evaluating this outcome requires a model of the users' response. The number of alternatives generated is not a measure of the alternatives that remain serviceable under simultaneous use.
+
+Governance can change those responses through pricing, scheduling, access rules, and coordination. The desired state needs a route and an arrangement that keeps it viable.
+
+\subhead{Slack and plasticity}
+
+High utilization can make a normal period look efficient while leaving few options when conditions change. Alternative suppliers, buffers, repair capacity, and isolation can preserve useful routes under disturbance.
+
+Work on highly optimized tolerance describes systems that are efficient for anticipated conditions and vulnerable outside them.\cite{carlson1999highly} Robustness has a distribution: strong protection in one direction can coexist with a weakness in another.
+
+\term{Plasticity} is the capacity to change structure while maintaining enough function to continue. Too little coupling prevents cooperation; too much compulsory coupling prevents adaptation. A durable system needs both useful commitments and places where commitments can be revised.
+
+\subsection{Dependency Surface, Synchronization, and Rollback}
+
+\subhead{Three sources of effective inertia}
+
+The \term{dependency surface} asks how many relationships a change touches, and how consequential those relationships are. The \term{synchronization cost} asks which of them must move together. The \term{rollback cost} asks what can be recovered after failure.
+
+A personal script may have a small dependency surface. A module connected to payroll, inventory, invoicing, compliance, and customer access has a larger one. A compatible update can permit gradual migration; a format change that every participant must adopt at once creates a coordination problem.
+
+Splitting software into services can isolate work and support independent change. It can also introduce distributed state, observability, versioning, and operational dependencies. Research on microservice migration records such tradeoffs.\cite{taibi2018architectural} The number of modules alone measures neither freedom nor complexity.
+
+\subhead{The external links}
+
+Power and logistics show how dependencies extend beyond one operator. A fuel interruption can affect electricity supply; transport policies and routes influence what can arrive; a blocked canal can redistribute shipping flows.\cite{morison2004power,nzmfat2021,suez2021} These cases require different explanations, while revealing a common need to trace the links outside an organization's diagram.
+
+Recent work on operational systems likewise treats deployment as an interaction among tools, operators, and the processes surrounding them.\cite{dong2022operational} The question for an AI application is where it sits within that structure.
+
+A modest tool with a small dependency surface may spread rapidly. A more capable tool at a critical interface may remain difficult to deploy. Matching intelligence to a structure requires an input boundary, an output boundary, a failure plan, and a responsible operator.
+
+Connections produce both capability and weight. The engineering task is to keep the former while making the latter manageable.

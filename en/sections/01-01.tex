@@ -1,0 +1,136 @@
+\chapter{The Evolutionary Paradox: Fast Intelligence, Slow Change}
+
+Refresh a browser and the screen fills with something new. Look outside and the street is much as it was ten years ago. The drain still floods after heavy rain. The utility crew still has to close the road, locate the buried services, and replace the pipe. A model can render a convincing version of the entire neighborhood before the crew has opened the trench. Both activities have a speed. The trouble begins when we measure one by the other.
+
+\section{The Illusion of a Single Clock}
+
+\subsection{A Mismatch in Perception}
+
+The faster a screen updates, the easier it becomes to mistake an update for a change. Forecasts about jobs, education, industry, and policy then collapse two processes into one: generating information in a space of representations, and rearranging materials, energy, bodies, and institutions. The first can expand through copying and repeated attempts. The second must pass through execution, verification, and coordination. Put both on the same clock, and the resistance between them disappears from the forecast.
+
+\subhead{Two speeds}
+
+Generative AI changes the speed of writing, drawing, coding, and planning. A proposal appears in seconds, and that speed is projected onto the world the proposal describes. Yet the arrival rate of candidates says little by itself about the rate at which a particular system can absorb them.
+
+AI makes search, generation, simulation, and expression cheaper. It can propose a building, a traffic model, a molecule, a business plan, a program, or a policy. The represented world contains materials, energy, equipment, bodies, institutions, liability, and feedback. Producing a plan completes an operation in the planning system. Executing it requires a state transition in another system. The costs of finding, implementing, verifying, and accepting a route have to be counted separately.
+
+Developers already know a small version of this distinction. Producing a patch, passing a test suite, migrating a live database, and recovering from a bad migration are different tasks. The gap widens when the proposed change reaches a power network, a hospital, or a construction site. A faster proposal does not establish that the receiving system is ready.
+
+Digital representations encourage rapid retries. A trained model can generate another draft with another inference call. A test branch can be discarded; a saved version can be restored. This convenience depends on the operation remaining inside a recoverable boundary. A leaked secret, a completed trade, or a faulty command sent to production carries consequences that version control cannot simply reverse.
+
+Images make the distinction particularly easy to miss. A plausible street scene can be synthesized without moving a vehicle, laying a cable, or pouring a foundation. The experience of acceleration is real. What accelerates is the production of a representation.
+
+A simple working description uses two growth rates:
+
+\begin{equation}
+u_{\mathrm{bits}}(t)=u_{\mathrm{bits}}(t_0)e^{a(t-t_0)},
+\qquad
+u_{\mathrm{atoms}}(t)=u_{\mathrm{atoms}}(t_0)e^{b(t-t_0)}.
+\end{equation}
+
+Here $u$ measures operations per unit cost for a fixed task; $t_0$ is the comparison date, and $a$ and $b$ are fitted rates over a specified interval. If $a>b$, the logarithm of the normalized ratio grows at rate $a-b$. The form describes a possible divergence. It does not supply the rates. A particular technology may improve exponentially, linearly, in steps, or toward saturation. Figure~\ref{fig:two-speeds} illustrates the distinction without assigning historical values to it.
+
+\input{figures/two-speeds.tex}
+
+\subhead{The installed world}
+
+Moving from representation to matter introduces execution costs. A rendered vehicle follows a calculated trajectory. A real one needs energy, traction, braking, steering, sensing, and contact control. A bridge design can be revised quickly; building it requires materials, equipment, labor, and a suitable foundation. Steel strength, ground conditions, and concrete curing enter the same engineering account. The familiar 28-day concrete strength is a testing benchmark; mix, temperature, and curing methods affect the rate of strength development. Faster drawing changes one part of this chain.
+
+The second constraint is the installed base. Software can sometimes be reorganized within a recoverable environment. Cities must be changed while people continue to live in them. Roads sit above buried services; new electrical loads connect to existing substations; a hospital's new equipment enters established clinical and maintenance routines. Upgrading a system requires a transition plan for the things that are already connected. Even a technology that needs little roadside modification must accommodate roads, users, operating rules, and liability.
+
+A third constraint comes from operating conditions. A simulator contains the disturbances its designers have included. A deployed system encounters additional changes, failures, and participants. A road crew deals with subsidence, conflicting utility maps, access requirements, weather, and the needs of nearby residents. A driving system faces the conditions under which its sensing and control actually work. Simulation can expose many failures before deployment. Field performance still depends on the relation between the model and the operating environment.
+
+\subhead{The cost of reversal}
+
+Recoverability changes the price of experimentation. Restoring a simulation state can be routine. A demolished pier, an administered medicine, or a damaged battery requires a different remedy. Physical repair can be possible, but its resource cost and consequences do not disappear when a previous design file is restored. Methods developed for cheap retries must be evaluated against the failure costs of the receiving system.
+
+Prediction and control also have different requirements. A system may predict that a falling glass will shatter. Catching it requires a sensor estimate, an actuator capable of reaching it, a suitable grip, and feedback fast enough to maintain contact without breaking it. Learned models can contribute to each part. Performance at representing an event does not establish performance at intervening in it.
+
+As generated scenes become more convincing, the crew outside the window can seem increasingly clumsy. That comparison omits most of the crew's task. One system produces a plausible account of forces; the other must apply them under real constraints.
+
+\key{A speed achieved in representation must be accounted for again at execution.} Energy, material properties, logistics, dependencies, and cooperation determine what crosses the boundary. These constraints can spread the effects of an abrupt improvement over a longer transition. They provide a buffer only when plans actually allow for them.
+
+The difference between the screen and the street is visible. Why, then, does public judgment so often take the faster side as representative? Part of the answer lies in how technological examples are selected, displayed, and financed.
+
+\subsection{The Technologies That Make the Demo}
+
+\subhead{Selection by attention}
+
+Software makes an unusually good demonstration. Its output can be shown, copied, and compared immediately. The construction of the building that houses the servers is harder to display as a breakthrough. Attention selects the lightest visible layer and leaves much of its support outside the frame.
+
+The selection process reinforces itself. A result that can be demonstrated attracts attention and investment; those resources help produce the next demonstration. Meanwhile, fabrication, power delivery, cooling, and maintenance progress through other schedules. Each can improve substantially, but its rate has to be measured on its own terms.
+
+An audience repeatedly shown the fast cases can mistake the sample for the whole. Then medicine, education, energy, and manufacturing are all expected to follow the trajectory of a software product. Slow adoption becomes evidence that an industry lacks digitization or that a model lacks intelligence. The possibility that another part of the system is binding drops out of view.
+
+The omitted cases cannot correct the story quickly. A planning decision, a replacement transformer, a materials qualification, or an extended field test supplies feedback over months or years. Its silence during a product launch is easily read as absence.
+
+\subhead{Infrastructure behind the interface}
+
+Communications provide a familiar example. A signal indicator on a phone gives no sense of the work behind coverage. Fiber installation can require access agreements, trenching or duct access, coordination with other utilities, testing, and repair. A protocol update and a physical network upgrade have different critical paths. The distinction comes from the operations required, not from a universal ratio between the speed of electrons and the speed of atoms.
+
+Energy systems make the issue sharper. A better dispatch algorithm can improve the use of available capacity. New capacity may still require equipment, land, financing, construction, network studies, and connection work. A hypothetical doubling of a solar panel's conversion efficiency would change the area or output calculation; it would still leave panels to manufacture, transport, mount, connect, and maintain.
+
+Berkeley Lab's 2026 queue study gives the US example a scale: more than 2,060~GW of generation and storage capacity was seeking grid connection at the end of 2025. For the regions with data, projects completed in 2025 had a median interval of more than five years from request to commercial operation. Much of the queued capacity will never be built. A submitted project and an operating power supply are different states.\cite{berkeley2026queues}
+
+Precision manufacturing poses the same distinction at a different scale. A lithography system can embody extraordinary informational sophistication while still requiring demanding fabrication, assembly, transport, installation, calibration, and service. Yield improvement depends on contact with materials and process variation. Better algorithms can shorten a feedback cycle and extract more from it. Evidence from the cycle remains part of the achievement.
+
+\subhead{Where the cloud stands}
+
+The word \emph{cloud} conceals an engineering site. Compute runs in buildings connected to electrical and communications networks, with servers, storage, power conversion, cooling, and staff. The IEA's October~14, 2026 report describes network capacity, connection queues, and permitting as constraints on data-center expansion.\cite{iea2026powering} The race for intelligence has reached the substation.
+
+Cooling requirements depend on the architecture, location, and operating conditions. A facility may consume water directly; water use may also arise in the electricity supply chain. No single evaporation rate describes every data center. The general requirement is to carry away waste heat while keeping equipment within its operating limits.
+
+The hardware has its own material history: mined inputs, processing, wafers, components, assembly, shipping, and replacement. Their costs can be made less visible to a user without being removed from the system.
+
+This bias needs no coordinated deception. What can be demonstrated receives attention; what enables it is treated as background. A useful analysis must give both a place in the same account.
+
+\subhead{Technological viscosity}
+
+\term{Technological viscosity} is the generalized resistance encountered when intelligence, an algorithm, or a technical plan attempts to move a real system from state~A to state~B. Execution, verification, maintenance, coordination, and the handling of failure all enter it. The word borrows from fluid mechanics the idea of resistance arising within the medium. In this book, its broader use requires task-specific definitions and measurements.
+
+Cheap generation changes the distribution of scarcity. When candidates multiply faster than reliable outcomes, trust and absorption capacity become relatively more valuable. A field once limited by its supply of possible designs may become limited by its ability to test, build, or sustain them. Candidate abundance can coexist with a shortage of results on which anyone can depend.
+
+Three coordinates give the smallest useful starting framework: \term{resource barriers} ($R$), \term{temporal rigidity} ($T$), and \term{topological coupling} ($G$). Can the change be supplied with resources? Can the required processes unfold in time? Can the change propagate through the dependencies already in place? These questions recur throughout the book.
+
+\subsection{The Material Basis of Virtual Escape}
+
+\subhead{Moving inward}
+
+When the material world is expensive and difficult to change, moving activity into a virtual environment can be attractive. High housing costs, congestion, and limited mobility give that attraction practical force. Remote work, online communities, and virtual environments can reduce particular travel or space requirements. The proposal becomes more ambitious when it treats mediation as independence from the physical conditions that sustain it.
+
+An old aspiration returns in a new form: keep an elaborate inner world while reducing the body's demands to a minimum. A headset offers a beach without a flight; an online meeting offers contact without a commute. Some substitutions produce real savings. Their effect must be compared with the activities displaced and the infrastructure added.
+
+The political version appears in proposals such as Balaji Srinivasan's \emph{The Network State}: organize online, then acquire a territorial and institutional presence. The relevant physical question is what supplies the energy, communications, transport, public health, and security on which the arrangement depends. A digital community can reorganize how these services are obtained. Independence requires an account of who actually provides them.
+
+The same question applies to ordinary remote work. A person can leave an office while remaining dependent on a grid, a network, a supply chain, and emergency care. The visible location changes faster than the supporting system.
+
+\subhead{The thermodynamic account}
+
+A virtual environment is implemented by physical states: charges and voltages, magnetic or electronic storage, and optical signals. Contemporary computation and communication dissipate energy. Supplying power and removing waste heat are operating conditions of the service.
+
+The sources and environmental effects of that electricity vary by place and time. Additional digital activity can increase demand; substitutions and efficiency improvements can reduce other demands. The net result requires a defined comparison. Virtual activity has a substrate even when it delivers a net material saving.
+
+Spatial flexibility also requires spatial infrastructure. A remote worker's connection may run through local distribution equipment, terrestrial fiber, undersea cables, and distant data centers. Those assets require construction, protection, inspection, repair, and replacement. Redundancy and geographic recovery can make them more reliable at additional cost. Thermodynamics alone supplies no rule that a more ordered or more complex system must be more fragile.
+
+The entropy balance for a system and its environment is
+
+\begin{equation}
+\Delta S_{\mathrm{system}}+\Delta S_{\mathrm{environment}}
+=\Delta S_{\mathrm{total}}\geq 0.
+\end{equation}
+
+Each term has units of joules per kelvin. If their combined boundary is isolated, a local entropy decrease must be accompanied by an equal or larger increase elsewhere. Equality is the reversible limit. Real power conversion, cooling, manufacturing, and transport include irreversible processes.
+
+Visual tidiness and informational usefulness are different quantities from thermodynamic entropy. A clean desktop is not a measurement of $\Delta S_{\mathrm{system}}$. The balance establishes the physical terms of the computation and its support, rather than a fixed entropy price per image, insight, or neatly arranged screen. Pollution, water consumption, and electronic waste also require their own measurements; they cannot be read directly from this inequality.
+
+Much of the apparent lightness of digital life comes from a division of work and location. An interface presents the result while the supporting machinery, maintenance, heat rejection, and waste handling occur elsewhere. Some costs fall, some move, and some new ones appear. The account has to follow all three.
+
+\subhead{The body remains connected}
+
+Human participation adds a biological condition. There is no demonstrated method for uploading a person's consciousness and dispensing with the living body. Ordinary digital life therefore still depends on food, temperature regulation, sleep, care, and health. A wound heals through a biological process; replacing a file does not replace that process.
+
+An apparently frictionless service can relocate bodily work. The electrical technician who maintains the supply, the parcel driver who reaches an inaccessible entrance, and the nurse who responds when someone becomes ill handle parts of the experience hidden by the interface. Their work has not become virtual because the request arrived through an app.
+
+Digital mediation can change how much material support an activity needs. It cannot dispense with support altogether. A serious account of virtual freedom therefore follows its dependencies into power, equipment, maintenance, and living bodies.
+
+So far, those dependencies have appeared as obstacles. They also perform another function. The same resistance that limits a rate of change can keep a system from coming apart. To see that function, we need to examine viscosity as damping.

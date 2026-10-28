@@ -1,0 +1,104 @@
+\section{The R--T--G Framework}
+
+Resources, process time, and dependencies describe different conditions of a transition. Fix the task, outcome, accounting boundary, and horizon before comparing them. Otherwise a cheap first attempt can be mistaken for a cheap completed result.
+
+\subhead{Coordinates and a response}
+
+Let $(R,T,G)$ describe resource barriers, temporal rigidity, and topological coupling. Let $\eta$ measure the transition cost relative to a stated reference:
+
+\begin{equation}
+\eta=f(R,T,G).
+\label{eq:eta-rtg}
+\end{equation}
+
+The coordinates describe sources of difficulty; $\eta$ is a response to be observed. Their units and normalization depend on the operational definitions.
+
+A working model is
+
+\begin{equation}
+\eta=\eta_0\exp(\alpha R+\beta T+\gamma G).
+\label{eq:eta-exp}
+\end{equation}
+
+Here $\eta_0$ is a reference value. The exponent must be dimensionless. With normalized coordinates, the coefficients describe marginal changes in log-cost over the range being studied. Interactions and changing coefficients can be added when the data justify them.
+
+\begin{table}[ht]
+\centering
+\caption{Three coordinates, three deployment questions}
+\label{tab:ch2-rtg}
+{\small
+\begin{tabularx}{\textwidth}{@{}lYYY@{}}
+\toprule
+ & Question & Typical evidence & What an intervention may change\\
+\midrule
+$R$ & Can the change be supplied? & Material, energy, equipment, capital & Resource use, capacity, maintenance\\
+$T$ & Can the process fit the window? & Dependencies, exposure, testing, coordination & Critical path, parallel work, risk\\
+$G$ & Can the connected system absorb it? & Interfaces, synchronization, recovery & Isolation, migration, accountability\\
+\bottomrule
+\end{tabularx}}
+\end{table}
+
+More equipment may relieve a deadline and increase capital cost. Standardization may reduce both coordination effort and waste. A safety process may add time while reducing later losses. Those directions are measured outcomes, rather than rules requiring every saving to be charged elsewhere.
+
+\subhead{Tradeoffs have a feasible set}
+
+At constant $\eta$, with coefficients held fixed,
+
+\begin{equation}
+\alpha\,dR+\beta\,dT+\gamma\,dG=0,
+\qquad
+\left.\frac{dR}{dT}\right|_{\eta,G}=-\frac{\beta}{\alpha}.
+\end{equation}
+
+The relation describes an iso-cost surface of the model. A real process can move along it only where a feasible engineering or institutional route exists. Different normalizations change the coefficient ratios; different tasks can change the model.
+
+This distinction prevents a common misuse: a mathematical compensation is not a purchasable substitution. A larger budget cannot always buy the required exposure period. A long schedule cannot supply a missing element. A new interface can sometimes remove a synchronization requirement that was previously expensive.
+
+\subhead{Thermodynamic limits}
+
+For a closed reaction system coupled to a reservoir at fixed temperature $T_0$ and pressure $p_0$, with the stated initial and final states, the reversible minimum net non-volume work input is
+
+\begin{equation}
+W_{\min}=\Delta G=G_{\mathrm f}-G_{\mathrm i}.
+\end{equation}
+
+Under the corresponding boundary and exchange assumptions, irreversibility adds a term related to entropy production:
+
+\begin{equation}
+W_{\mathrm{in}}=\Delta G+T_0S_{\mathrm{gen}},
+\qquad S_{\mathrm{gen}}\geq0.
+\end{equation}
+
+Other heat exchanges, material flows, or constraints require the appropriate exergy account. A theoretical minimum and a plant's actual total consumption answer different questions.
+
+Aluminum makes the initial-state issue visible. Producing metal from alumina and remelting suitable aluminum scrap start from different states. The latter retains part of the work performed earlier and can therefore require much less energy.\cite{quinkertz2001scenario} Calling one route more intelligent cannot explain the difference by itself.
+
+\subhead{Structural bookkeeping}
+
+With a consistent complexity measure and boundary,
+
+\begin{equation}
+\Delta C_{\mathrm{tot}}=
+\Delta C_{\mathrm{local}}+\Delta C_{\mathrm{rest}}.
+\end{equation}
+
+The identity tracks redistribution. Total complexity can rise, stay constant, or fall. Removing redundant interfaces can reduce it; automating one operation while building a large support system can increase it.
+
+The same separation applies to risk and responsibility. A local operator's workload may fall while a customer or another institution inherits the difficult remainder. The total and its allocation belong in different columns of the account.
+
+\subhead{How to use the framework}
+
+Fusion provides a demanding resource-and-time combination. A representative deuterium-tritium criterion is commonly expressed through density, temperature, and energy-confinement time:
+
+\begin{equation}
+nT\tau_E\gtrsim
+3\times10^{21}\ \mathrm{keV\,s\,m^{-3}},
+\end{equation}
+
+for stated plasma assumptions near the relevant operating region.\cite{lawson1957some} The exact threshold depends on the criterion and regime. A power plant must also close its engineering and economic balances.
+
+At another extreme, a generated draft can appear cheaply and quickly while its use remains blocked by evidence or authorization. In one case the apparatus and physical process dominate; in the other, generation can be easy and the receiving interface difficult.
+
+The framework directs attention to the bottleneck and to the proposed intervention's actual effect. It is used qualitatively with explicit criteria where calibration is unavailable. Quantitative prediction needs defined variables, fitted coefficients, uncertainty, and tests against alternatives. The appendix develops that route.
+
+The next chapter follows the transition itself. Once intelligence reaches an interface, what does the medium do with the input?
