@@ -1,3 +1,5 @@
+**English edition correction - 29 October 2026.** The previous English release was abridged. A complete translation of the Chinese revision is being prepared, retaining every paragraph, heading, equation, figure, table, reference, and example.
+
 # Viscosity
 
 ### Intelligence Across Bits, Atoms, and Life

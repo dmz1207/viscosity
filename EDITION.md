@@ -1,3 +1,7 @@
+# English edition correction
+
+The English text in the first release was an abridged adaptation. Its earlier description as a complete English edition was incorrect. A full translation preserving the Chinese revision's content and sequence is in progress.
+
 # Edition notes
 
 This repository publishes the complete Chinese revision and the English adaptation of *Viscosity: Intelligence Across Bits, Atoms, and Life*, dated 28 October 2026.
