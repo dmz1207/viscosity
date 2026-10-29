@@ -5,8 +5,10 @@
     "repository": "dmz1207/viscosity",
     "visibility": "public",
     "release_policy": "Publish both languages only after the complete English manuscript has been written and reviewed.",
-    "edition_status": "Chinese revision complete; full English translation in progress",
-    "translation_policy": "Complete translation; no omissions, condensation, restructuring, or substituted examples."
+    "edition_status": "English translation in progress; previous English adaptation withdrawn",
+    "translation_policy": "Complete translation; no omissions, condensation, restructuring, or substituted examples.",
+    "presentation": "English first, Chinese alongside",
+    "edition_name": "English and Chinese editions"
   },
   "units": [
     {
