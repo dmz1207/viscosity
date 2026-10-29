@@ -1,5 +1,7 @@
 # Viscosity
 
+**Ming-Zhe Dai**
+
 ### The Evolution of Intelligence in Bits, Atoms, and Life
 
 **The world does not run at inference speed.**
@@ -10,7 +12,7 @@ AI can write the patch, design a molecule, and render a city. The patch still ha
 
 English and Chinese editions · [中文说明](README.zh-CN.md)
 
-The English edition is being translated from the Chinese manuscript. The earlier English text has been withdrawn. [Read the Chinese edition](zh/CONTENTS.md) · [Chinese PDF](zh/viscosity-zh.pdf)
+The English edition is being translated from the Chinese manuscript. [Read the Chinese edition](zh/CONTENTS.md) · [Chinese PDF](zh/viscosity-zh.pdf)
 
 A convincing output can arrive in seconds. A working system has to pass through energy, materials, time, dependencies, and consequences. As generation gets cheaper, the bottleneck moves into deployment, verification, maintenance, and the question of who answers when something goes wrong.
 
@@ -53,4 +55,4 @@ Contemporary cases use primary sources checked through **28 October 2026**. [Edi
 
 For a correction, open an issue with the chapter, quoted passage, and supporting source.
 
-Copyright remains with the author. No open-content license has been granted.
+Copyright © 2026 Ming-Zhe Dai. No open-content license has been granted.

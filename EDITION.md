@@ -1,10 +1,12 @@
 # Edition notes
 
+**Ming-Zhe Dai**
+
 *Viscosity: The Evolution of Intelligence in Bits, Atoms, and Life* is published in English and Chinese. The repository presents English first, with Chinese alongside it.
 
 ## Text
 
-The English edition is being translated from the Chinese revision. It preserves the source's content and sequence, including every argument, example, equation, table, and figure. The previous English adaptation has been withdrawn from the current repository and release downloads.
+The English edition is being translated from the Chinese revision. It preserves the source's content and sequence, including every argument, example, equation, table, and figure.
 
 The Chinese revision, dated 28 October 2026, contains a preface, seven chapters, and a theoretical appendix, organized into 44 source units. Its PDF, chapter readers, and LaTeX source are available in zh.
 
