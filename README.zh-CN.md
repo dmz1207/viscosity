@@ -2,6 +2,8 @@
 
 **Ming-Zhe Dai**
 
+PhD, Associate Professor, Central South University
+
 ## 比特、原子与生命的智能演化
 
 [English](README.md) · [中文阅读](zh/CONTENTS.md) · [中文 PDF](zh/viscosity-zh.pdf)

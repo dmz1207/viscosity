@@ -2,6 +2,8 @@
 
 **Ming-Zhe Dai**
 
+PhD, Associate Professor, Central South University
+
 ### The Evolution of Intelligence in Bits, Atoms, and Life
 
 **The world does not run at inference speed.**

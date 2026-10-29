@@ -2,6 +2,8 @@
 
 **Ming-Zhe Dai**
 
+PhD, Associate Professor, Central South University
+
 *Viscosity: The Evolution of Intelligence in Bits, Atoms, and Life* is published in English and Chinese. The repository presents English first, with Chinese alongside it.
 
 ## Text
