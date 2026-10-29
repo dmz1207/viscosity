@@ -1,60 +1,110 @@
 # Viscosity
 
+### The Evolution of Intelligence in Bits, Atoms, and Life
+
 **Ming-Zhe Dai**
 
 PhD, Associate Professor, Central South University
 
-### The Evolution of Intelligence in Bits, Atoms, and Life
+[中文](README.zh-CN.md)
 
-**The world does not run at inference speed.**
+1. **Why do AI capabilities keep leaping forward while productivity across firms and the wider economy grows so much more slowly?**[^1]
 
-AI can write the patch, design a molecule, and render a city. The patch still has to survive production. The molecule has to work in a body. Someone still has to dig up the street.
+2. **Why is intelligence getting cheaper to use while the power, chips, and infrastructure behind it grow ever more demanding?**[^2]
 
-*Viscosity* follows intelligence across that gap.
+3. **Why can models already generate convincing worlds while general-purpose robots still struggle to function reliably in ordinary homes?**[^3]
 
-English and Chinese editions · [中文说明](README.zh-CN.md)
+4. **Why can AI design new molecules rapidly while clinical efficacy and long-term safety still take time to establish in the real world?**[^4]
 
-The English edition is being translated from the Chinese manuscript. [Read the Chinese edition](zh/CONTENTS.md) · [Chinese PDF](zh/viscosity-zh.pdf)
+5. **Why is AI generating mathematical proofs ever faster while the mathematical community struggles to keep pace with understanding and absorbing them?**[^5]
 
-A convincing output can arrive in seconds. A working system has to pass through energy, materials, time, dependencies, and consequences. As generation gets cheaper, the bottleneck moves into deployment, verification, maintenance, and the question of who answers when something goes wrong.
+6. **Why does the same technology spread rapidly through some industries and regions while reaching others only slowly?**[^6]
 
-This book connects robotics, control theory, thermodynamics, biology, software, and human agency through **technological viscosity**: the resistance encountered when a possible change has to become an actual one.
+7. **Why do verification, trust, and accountability struggle to keep pace as machines gain the power to judge and act on their own?**[^7]
 
-## Start with a problem
+8. **Why can machines do more and more while the question of what people are still needed for becomes harder to answer?**[^8]
 
-- A database migration looks simple until the old system has to keep running.
-- A robot learns a grasp, then meets a different cup.
-- A generated drug candidate enters a trial whose outcomes still need time.
-- An optimizer improves every local score while the network becomes harder to recover.
-- A profession keeps its skills while losing the familiar evidence of its value.
+## Why progress flows at different speeds
 
-What connects them? **Resources. Time. Coupling.** A change needs inputs, a process that can finish, and a connected world able to absorb it.
+*Viscosity* proposes a meta-concept for technological change: **viscosity**, the generalized damping intelligence encounters as it changes the state of the world. Progress continues at sharply different speeds across industries, regions, and institutions. The pattern resembles coupled layers of fluid with different viscosities: faster layers pull on slower ones, while the coupling also holds them back.
 
-## A battery has to carry itself
+A model can find a better design, generate a proof, or propose a molecule. What determines how quickly that result becomes a working machine, shared knowledge, or an effective treatment? This book follows the resistance along that path—and the way each breakthrough moves the bottleneck.
 
-![Battery mass, hover power, and endurance](en/assets/hover-tradeoff.png)
+## The framework: resources, time, topology
 
-More stored energy can eventually buy less endurance. The diagram follows a fixed-area ideal hover model; the argument carries the calculation into payload, verification, airspace, and operations. Throughout the book, diagrams expose the mechanism behind a claim.
+To change a system from one state to another, three questions matter: what must be committed, what must unfold over time, and what must change together.
+
+| Constraint | The hard question |
+| --- | --- |
+| **Resource barriers — R** | What materials, energy, equipment, and capital must be committed? |
+| **Temporal rigidity — T** | How much time do reactions, growth, testing, and coordination require? |
+| **Topological coupling — G** | Which parts must change together, and which can be isolated or rolled back? |
+
+The framework is applied across **bits, atoms, and genes**, examining intelligence in information, matter, and life.
+
+| Layer | Resources · R | Time · T | Topology · G |
+| --- | --- | --- | --- |
+| **Bits** | Compute, electricity, chips | Training, testing, feedback cycles | Software dependencies, interfaces, platform networks |
+| **Atoms** | Materials, energy, equipment | Manufacturing, construction, wear, reliability testing | Supply chains, production networks, power grids |
+| **Genes** | Experimental resources, organisms, controlled conditions | Development, reproduction, clinical trials, long-term effects | Gene regulation, organisms, ecosystems |
+
+This matrix gives qualitative analysis a structure: identify the dominant constraint, compare where it binds, and trace how an intervention changes it. More resources may buy time. Modularity may reduce coupling. Automation may accelerate production while shifting the burden to verification. The questions are how much the total cost changes, where it moves, and who bears it.
+
+## When output stops proving your value
+
+Writing, calculating, and explaining once provided evidence of training, competence, and a place in society. When the same outputs can be generated on demand, that evidence loses its force. *Viscosity* follows the resulting shifts in human value: toward judgment, verification, care, long-term commitment, and responsibility for consequences. Whether this work earns income, rights, and recognition depends on institutions.
+
+The same question reaches into agency. One system may make a judgment, another execute it, a third collect the benefit, and someone else bear the damage. Feedback returns information; bearing consequences returns costs. Where those costs return shapes who has the power to act—and who must answer for the result.
+
+## For people who build, test, and live with systems
+
+If you have shipped software, tuned a controller, waited for a trial, or watched an optimized system become fragile, you are already inside the problem. The book connects thermodynamics, information theory, control theory, biology, and philosophy through the costs of turning a convincing result into a dependable one.
+
+The argument works through mechanisms: activation barriers, critical paths, delayed feedback, hysteresis, percolation, stability, and nonconvex tradeoffs. Diagrams expose where local gains stop, where costs migrate, and where a system loses the ability to recover.
+
+## An open research program
+
+The meta-concept and framework support qualitative analysis and classification. Formalization and quantitative validation remain open work: developing measurable definitions of R, T, and G; modeling their interactions; and deriving predictions that can be tested against data.
+
+Readers are invited to contribute case studies, datasets, models, counterexamples, and empirical tests through [GitHub Issues](https://github.com/dmz1207/viscosity/issues). The next stage is to turn the framework into a quantitative theory that others can measure, challenge, and improve.
 
 ## Inside the book
 
-| | Chapter | What it follows |
+| | Chapter | Central question |
 | --- | --- | --- |
-| 1 | Fast Intelligence, Slow Change | Generation, execution, and the moving bottleneck |
-| 2 | The Physical Boundaries of Change | Energy, matter, process time, and inherited dependencies |
-| 3 | Intelligence at the Interface | Feedback, overload, verification, and models that change their own evidence |
-| 4 | Life, Bodies, and Movement | Biological intervention, embodiment, vehicles, fleets, and flight |
-| 5 | Existence and Collapse | Evidence, recognition, agency, and the return path for consequences |
-| 6 | Rebuilding Value in the Shear Zone | What becomes scarce when symbolic output becomes abundant |
-| 7 | Freedom Inside the Constraints | Replication, practical choices, and demanding frontiers |
-| A | The Framework and Its Empirical Tests | Definitions, measurement, critical paths, and testable predictions |
+| 1 | The Evolutionary Paradox | Why does technological acceleration outrun what reality can absorb? |
+| 2 | The Physical Boundaries of Reconfiguring Matter | What do fundamental forces, resources, time, and dependencies require? |
+| 3 | Interface Dynamics | How do media absorb intelligence, and how does overload change their response? |
+| 4 | Life, Bodies, and Movement | Why does intelligence differentiate into exploration, control, and verification? |
+| 5 | Existence and Collapse | What can be relied on, what may enter action, and where do the consequences return? |
+| 6 | The Reconstruction of Value | Where does human value move when the old evidence of competence loses its force? |
+| 7 | Finding Freedom Within Necessity | How can individuals, organizations, and civilizations choose which constraints to confront? |
+| A | The Theoretical Engine | How can generalized viscosity be formalized, measured, and tested? |
 
-## Editions and sources
+> Freedom is the ability to choose, distribute, and bear viscosity.
 
-The English edition preserves the Chinese manuscript's content, argument, examples, equations, and figures. English is the primary language of the repository; Chinese is available alongside it.
+## Read
 
-Contemporary cases use primary sources checked through **28 October 2026**. [Edition notes](EDITION.md) describe the source and verification work.
+English and Chinese editions · [Chinese chapters](zh/CONTENTS.md) · [Chinese PDF](zh/viscosity-zh.pdf) · [Edition notes](EDITION.md)
 
-For a correction, open an issue with the chapter, quoted passage, and supporting source.
+## Sources behind the opening questions
+
+The opening questions draw on the following research and public discussions, checked through **29 October 2026**. Contemporary cases in the Chinese manuscript were checked through **28 October 2026**.
+
+[^1]: Dario Amodei, [“Policy on the AI Exponential”](https://darioamodei.com/post/policy-on-the-ai-exponential), June 2026; [NBER Working Paper 34836](https://www.nber.org/papers/w34836), October 2026 revision.
+
+[^2]: Jensen Huang and NVIDIA, [GTC Berlin coverage](https://blogs.nvidia.com/gtc-berlin-2026-news/), October 2026; IEA, [*Powering Artificial Intelligence*](https://www.iea.org/reports/powering-artificial-intelligence), 14 October 2026.
+
+[^3]: Fei-Fei Li, [“To Seek a Newer World”](https://drfeifei.substack.com/p/worldlabs-joining-amd), 28 September 2026; [World Labs research](https://www.worldlabs.ai/blog).
+
+[^4]: Demis Hassabis and James Manyika, [“AI as the Ultimate Tool for Science”](https://www.amacad.org/publication/daedalus/ai-ultimate-tool-science-conversation-demis-hassabis), Winter/Spring 2026; [“Artificial intelligence in drug discovery”](https://www.nature.com/articles/s41573-026-01496-2), August 2026.
+
+[^5]: Terence Tao, [living summary of his views on AI](https://teorth.github.io/tao-web/ai-views.html), reviewed and corrected by Tao, updated 28 October 2026; [“Math 2.0” lecture](https://aimath.org/news/article/terence-tao-presents-math-20-at-the-2026-aim-public-lecture/), 9 October 2026.
+
+[^6]: World Bank, [*World Development Report 2026*](https://www.worldbank.org/en/publication/wdr2026); Peter Thiel, [*The Builders* interview](https://www.iheart.com/podcast/1119-the-builders-347224769/episode/peter-thiel-we-need-to-hit-348165179/), published 22 October 2026.
+
+[^7]: Dario Amodei, [“We Must Pace the Frontier”](https://darioamodei.com/post/we-must-pace-the-frontier), September 2026; Sam Altman, [*Vanity Fair* interview](https://www.vanityfair.com/story/sam-altman-exclusive-interview-part-2), 5 October 2026.
+
+[^8]: Elon Musk, [*The Builders* interview](https://www.iheart.com/podcast/1119-the-builders-347224769/episode/elon-musk-humans-wont-be-in-347995056/), published 20 October 2026, recorded 6 August 2026; [Tao on AI and the purposes of mathematics](https://teorth.github.io/tao-web/ai-views.html).
 
 Copyright © 2026 Ming-Zhe Dai. No open-content license has been granted.
