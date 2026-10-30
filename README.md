@@ -8,6 +8,10 @@ PhD, Associate Professor, Central South University
 
 [中文](README.zh-CN.md)
 
+> AI is racing ahead. Why is the world still so hard to change?
+
+The demo dazzles. Deployment is hard. Answers get cheaper; dependable systems remain expensive. For anyone building a product, choosing a career, or trying to understand this moment, the puzzle has outgrown “How capable will the models become?” Why does a leap in capability fail to produce an equally large leap in the world around us?
+
 1. **Why do AI capabilities keep leaping forward while productivity across firms and the wider economy grows so much more slowly?**[^1]
 
 2. **Why is intelligence getting cheaper to use while the power, chips, and infrastructure behind it grow ever more demanding?**[^2]
@@ -24,11 +28,13 @@ PhD, Associate Professor, Central South University
 
 8. **Why can machines do more and more while the question of what people are still needed for becomes harder to answer?**[^8]
 
-## Why progress flows at different speeds
+## The bottleneck moves
+
+Cheaper intelligence changes which constraints matter. It can accelerate the search for a solution while a manufacturing process, a test cycle, a web of dependencies, or a boundary of responsibility sets the pace of change. A breakthrough clears one obstacle and exposes the next.
 
 *Viscosity* proposes a meta-concept for technological change: **viscosity**, the generalized damping intelligence encounters as it changes the state of the world. Progress continues at sharply different speeds across industries, regions, and institutions. The pattern resembles coupled layers of fluid with different viscosities: faster layers pull on slower ones, while the coupling also holds them back.
 
-A model can find a better design, generate a proof, or propose a molecule. What determines how quickly that result becomes a working machine, shared knowledge, or an effective treatment? This book follows the resistance along that path—and the way each breakthrough moves the bottleneck.
+The practical question becomes sharper: where can the next gain in intelligence produce a real change, what else must move with it, and who bears the cost?
 
 ## The framework: resources, time, topology
 
@@ -54,11 +60,18 @@ This matrix gives qualitative analysis a structure: identify the dominant constr
 
 Writing, calculating, and explaining once provided evidence of training, competence, and a place in society. When the same outputs can be generated on demand, that evidence loses its force. *Viscosity* follows the resulting shifts in human value: toward judgment, verification, care, long-term commitment, and responsibility for consequences. Whether this work earns income, rights, and recognition depends on institutions.
 
-The same question reaches into agency. One system may make a judgment, another execute it, a third collect the benefit, and someone else bear the damage. Feedback returns information; bearing consequences returns costs. Where those costs return shapes who has the power to act—and who must answer for the result.
+The same question reaches into subjecthood. One system may make a judgment, another execute it, a third collect the benefit, and someone else bear the damage. Feedback returns information; bearing consequences returns costs. Where those costs return shapes who has the power to act—and who must answer for the result.
 
-## For people who build, test, and live with systems
+## What the book helps you untangle
 
-If you have shipped software, tuned a controller, waited for a trial, or watched an optimized system become fragile, you are already inside the problem. The book connects thermodynamics, information theory, control theory, biology, and philosophy through the costs of turning a convincing result into a dependable one.
+| A familiar confusion | What the framework brings into view |
+| --- | --- |
+| **AI gets better. Why does my industry barely change?** | Separate the speed of generating a solution from the speed of putting it to work. Find the stage that sets the pace. |
+| **Every component improves. Why does the system become harder to change?** | Trace the dependencies through which a local gain creates coordination costs, compatibility burdens, or new failure paths. |
+| **Outputs multiply. Why does trust become harder to establish?** | Follow the work of verification, the time feedback takes, and the path by which consequences return to those making decisions. |
+| **My skills are easier to reproduce. Where can my value go?** | Examine how judgment, care, commitment, and responsibility acquire value—and which institutions can turn that value into income, rights, and recognition. |
+
+If you have shipped software, tuned a controller, waited for a trial, or watched an optimized system become fragile, you are already inside these questions. The book connects thermodynamics, information theory, control theory, biology, and philosophy through the costs of turning a convincing result into a dependable one.
 
 The argument works through mechanisms: activation barriers, critical paths, delayed feedback, hysteresis, percolation, stability, and nonconvex tradeoffs. Diagrams expose where local gains stop, where costs migrate, and where a system loses the ability to recover.
 
@@ -85,11 +98,11 @@ Readers are invited to contribute case studies, datasets, models, counterexample
 
 ## Read
 
-English and Chinese editions · [Chinese chapters](zh/CONTENTS.md) · [Chinese PDF](zh/viscosity-zh.pdf) · [Edition notes](EDITION.md)
+**First edition** · [English PDF](en/viscosity-en.pdf) · [中文 PDF](zh/viscosity-zh.pdf) · [Downloads](https://github.com/dmz1207/viscosity/releases/tag/v1.0)
 
 ## Sources behind the opening questions
 
-The opening questions draw on the following research and public discussions, checked through **29 October 2026**. Contemporary cases in the Chinese manuscript were checked through **28 October 2026**.
+The opening questions draw on the following research and public discussions. Contemporary sources in both editions were checked through **29 October 2026**; announcements, forecasts, and reported results retain their respective status.
 
 [^1]: Dario Amodei, [“Policy on the AI Exponential”](https://darioamodei.com/post/policy-on-the-ai-exponential), June 2026; [NBER Working Paper 34836](https://www.nber.org/papers/w34836), October 2026 revision.
 
@@ -107,4 +120,4 @@ The opening questions draw on the following research and public discussions, che
 
 [^8]: Elon Musk, [*The Builders* interview](https://www.iheart.com/podcast/1119-the-builders-347224769/episode/elon-musk-humans-wont-be-in-347995056/), published 20 October 2026, recorded 6 August 2026; [Tao on AI and the purposes of mathematics](https://teorth.github.io/tao-web/ai-views.html).
 
-Copyright © 2026 Ming-Zhe Dai. No open-content license has been granted.
+Copyright © 2026 Ming-Zhe Dai.

@@ -1,47 +1,29 @@
-# Edition notes
+# Viscosity · First edition
 
-**Ming-Zhe Dai**
-
+**Ming-Zhe Dai**  
 PhD, Associate Professor, Central South University
 
-*Viscosity: The Evolution of Intelligence in Bits, Atoms, and Life* is published in English and Chinese. The repository presents English first, with Chinese alongside it.
+[English PDF](en/viscosity-en.pdf) · [中文 PDF](zh/viscosity-zh.pdf) · [Downloads](https://github.com/dmz1207/viscosity/releases/tag/v1.0)
 
-## Text
+The English and Chinese editions contain the preface, seven chapters, and Appendix A. Both use Chicago author-date references. Contemporary sources were checked through 29 October 2026.
 
-The English edition is being translated from the Chinese revision. It preserves the source's content and sequence, including every argument, example, equation, table, and figure.
+Viscosity is the meta-concept; resources, time, and topology supply the framework across bits, atoms, and genes. Formalization and quantitative validation remain open research.
 
-The Chinese revision, dated 28 October 2026, contains a preface, seven chapters, and a theoretical appendix, organized into 44 source units. Its PDF, chapter readers, and LaTeX source are available in zh.
+## Source
 
-## Research status
+Each language directory contains the whole-book `book.tex`, illustrations, and `refs.bib`. From that directory, compile with XeLaTeX, run biber on `book`, and compile twice more. The PDFs can be read directly.
 
-Viscosity is the book's meta-concept. Resources, time, and topology provide the analytical framework, applied across bits, atoms, and genes. The framework supports qualitative analysis and classification; formalization and quantitative validation remain open research work.
+Latin text uses Times New Roman, mathematics TeX Gyre Termes Math, and Chinese text SimSun. Other systems may substitute an installed Chinese family in the source.
 
-Readers are invited to contribute measurable definitions, models, case studies, datasets, counterexamples, and empirical tests through GitHub Issues.
+## 黏滞 · 第一版
 
-## Sources and verification
+**Ming-Zhe Dai**  
+博士，副教授，中南大学
 
-Contemporary cases in the Chinese revision were checked against primary sources through 28 October 2026. Announcements retain their announced or planned status; statistical reports retain their data year. Theoretical illustrations are identified as models or schematics.
+中英文版均含前言、七章正文与附录A，参考文献采用Chicago著者—年份格式。当代资料核查截至2026年10月29日。
 
-The English and Chinese introductions open with eight corresponding questions, drawn from research and public discussions checked through 29 October 2026. Their linked sources appear in both introductions.
+黏滞是元概念，资源、时间与拓扑构成分析框架，用于比特、原子与基因三个层面。形式化与定量验证仍是开放研究。
 
-The Chinese PDF was compiled with XeLaTeX and biber, checked for missing citations and references, undefined commands, missing glyphs, and overflowing text, and rendered for layout review. Its chapter readers retain equations, tables, figures, and linked references.
+各语言目录包含全书LaTeX源文件、插图与参考文献。编译使用XeLaTeX与biber。西文字体采用Times New Roman，数学采用TeX Gyre Termes Math，中文采用宋体。
 
-English language and layout checks are in progress. The English edition will be published after translation and verification.
-
-## Files
-
-| Path | Contents |
-| --- | --- |
-| zh/viscosity-zh.pdf | Chinese PDF |
-| zh/CONTENTS.md | Chinese chapter readers |
-| zh/book.tex, zh/sections | Chinese source and its 44 units |
-| shared/refs.bib | Bibliography |
-| en/assets, zh/assets, zh/figures | Illustrations |
-| shared/figures | Analytical figure sources |
-| editorial/alignment.json | Translation status and source checksums |
-
-## Rebuilding
-
-Use XeLaTeX, biber, and the fonts named in the source. The Chinese source uses Windows CJK fonts; another system can substitute an installed CJK family. Compile book.tex, run biber on book, then compile twice more from the language directory.
-
-The supplied PDF and chapter readers can be read without a typesetting environment.
+Copyright © 2026 Ming-Zhe Dai.

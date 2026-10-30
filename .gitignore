@@ -1,4 +1,3 @@
-_work/
 *.aux
 *.bcf
 *.blg
@@ -10,12 +9,3 @@ _work/
 __pycache__/
 .DS_Store
 Thumbs.db
-editorial/*
-!editorial/alignment.json
-!editorial/术语表.md
-
-en/viscosity-en-working.pdf
-
-编写进度.md
-
-editorial/github-metadata.json
